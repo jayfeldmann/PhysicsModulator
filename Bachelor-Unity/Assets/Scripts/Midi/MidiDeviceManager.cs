@@ -8,9 +8,12 @@ using UnityEngine;
 public class MidiDeviceManager : MonoBehaviour
 {
     public static MidiDeviceManager instance;
-
+    public static int activeMidiDevice = -1;
+    
     [SerializeField] private TMP_Dropdown _midiDeviceDropdown;
     private Dictionary<int, string> _midiDevices;
+    
+    
 
     private void Awake()
     {
@@ -40,5 +43,20 @@ public class MidiDeviceManager : MonoBehaviour
             dropdownDevices.Add(deviceName);
         }
         _midiDeviceDropdown.AddOptions(dropdownDevices);
+        SetActiveMidiDevice(0);
+    }
+
+    public void SetActiveMidiDevice(int deviceIndex)
+    {
+        if (_midiDevices.ContainsKey(deviceIndex))
+        {
+            activeMidiDevice = deviceIndex;
+            Debug.Log($"New midi device: {_midiDevices[deviceIndex]}");
+        }
+        else
+        {
+            activeMidiDevice = -1;
+            Debug.Log("No MIDI Devices connected.");
+        }
     }
 }
