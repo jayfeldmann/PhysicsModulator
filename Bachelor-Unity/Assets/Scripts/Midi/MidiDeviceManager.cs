@@ -10,7 +10,7 @@ public class MidiDeviceManager : MonoBehaviour
     public static MidiDeviceManager instance;
     public static int activeMidiDevice = -1;
     
-    [SerializeField] private TMP_Dropdown _midiDeviceDropdown;
+    [SerializeField] private TMP_Dropdown _midiDeviceDropdown = default;
     private Dictionary<int, string> _midiDevices;
     
     
