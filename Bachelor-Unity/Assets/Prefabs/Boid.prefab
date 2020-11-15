@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2052969597052567495}
   - component: {fileID: 5982824099159299296}
   - component: {fileID: 7142245531534832325}
+  - component: {fileID: 3472324501119978997}
   m_Layer: 0
   m_Name: Boid
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 54ec479c991eec540af61580508d59eb, type: 3}
   m_Color: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10.24, y: 7.68}
@@ -95,5 +96,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52817239b5f9d994ea6c3d7029dc05cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boidSpeed: 150
+  boidSpeed: 50
   _spriteRenderer: {fileID: 5982824099159299296}
+  _normalColor: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
+  _activeColor: {r: 0.18039216, g: 0.8, b: 0.44313726, a: 1}
+  sendChannel: -1
+  sendCC: -1
+  isActive: 0
+  isSelected: 0
+  sendModulator: 0
+--- !u!61 &3472324501119978997
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8503276907705927906}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 7.68}
+    newSize: {x: 10.24, y: 7.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.24, y: 7.68}
+  m_EdgeRadius: 0
