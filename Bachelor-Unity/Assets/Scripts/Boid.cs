@@ -146,13 +146,12 @@ public class Boid : MonoBehaviour
 
     private void OnMouseDown()
     {
-        OpenBoidOptions();
-    }
-
-    private void OpenBoidOptions()
-    {
-        BoidOptions.activeBoid = this;
-        UIManager.instance.boidOptionsPanel.SetActive(true);
+        if (!isSelected)
+        {
+            MidiOptions.sendController = this.sendController;
+            UIManager.instance.midiOptionsPanel.SetActive(true);
+            SelectBoid();
+        }
     }
 
     private void MoveBoid()

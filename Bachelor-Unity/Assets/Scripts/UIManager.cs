@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
     public GameObject settingsPanel;
-    public GameObject boidOptionsPanel;
+    [FormerlySerializedAs("boidOptionsPanel")] public GameObject midiOptionsPanel;
     public LoadSaveSettings loadSaveSettings;
 
     private void Awake()
@@ -35,9 +36,9 @@ public class UIManager : MonoBehaviour
     public void EnableDisableSettings()
     {
         
-        if (BoidOptions.isActive)
+        if (MidiOptions.isActive)
         {
-            boidOptionsPanel.SetActive(false);
+            midiOptionsPanel.SetActive(false);
             return;
         }
         

@@ -19,68 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/DataHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MidiHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MidiHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/OscHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/OscHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SendController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SendController.cs.meta" afterDir="false" />
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Added Data/Midi/Osc Handlers.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/07/0756b5b13b999652f842d9dad7a2867b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0b765757d59eea6ce1bcd7d12cd6ae5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1c9bf7d6a5bd69e4a325c0670c145565" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/26/2679c3121a639b3b33e79e3203e4e2e0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/28/287f090dd3b6608f9304ce886e461149" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2d1ea5c4d6ba557daefc9be029cb5723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/37/371063495db121b59189b121b01aafca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/419aa43dd7c4d633b0cc5b834b028679" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/43/432c6f54af70947e88c9ebecb029fd75" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/48/486dbe356fdbff35072453a1eb8727ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/49/499e60779a54ae6a173efbdfb1f8bcad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4c/4c9c7fd21c26b5eeb0177e6dc2f4ce36" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60abcfbd298edc4af068fdcdb2b2c9fe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/66e1b830e78d3bade947c59ff0d6a683" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/68/68b2fc0b968e7520e68a0480ba799370" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6e/6e56c7b253b093a635fe8ff232873e62" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/735019cc6ce9f92fe3f47eb0ef586822" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/74bc12e80a0c1973b695131cdc7a3ac7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/78/78f001192891225e39312e3b1b50138d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e66e02ef524123c674f37ee551736c3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/80/80da0bdbcc029eea1d9c203c0e36f6f2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/81/8161c9067e20f80401d9d8c4f8a536e3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/82/82c1c2dd6647c9129f7a7dc6dfa37330" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/83229264c4987795fce77e379311a76c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8c/8c008cd232f9986a0dab5232c2dda368" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/90de31801284e37c30f59826444abf94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/91/9164f6e8e944dba919061febaeb3f92f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ad/ad4287ca45d5ba2acefd229fa7277327" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b4/b4f593dcf0f2d61da89747560a1621c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bb/bba0c17f72c4d6b79eb0b0df43b26786" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2dd897552f32f5f418d5626c5f826ab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c6/c611b383770db8eb27b7fcf76c44f39a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d042c77a607b82c681604e5780618a1a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d09a511606bfb7043e12489e44391b28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/db/db259635787bb464429b08a46fb4d035" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e05811ac88e9462f0471d575d4e0c8ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e8b064e03639917f4160dd0aad8c89e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SendController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SendController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/5e/5e3a978b74c1d2571ef3dc6cf9ade2b8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/5e/5e3a978b74c1d2571ef3dc6cf9ade2b8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +70,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSC.cs" />
         <option value="$PROJECT_DIR$/Assets/LoadSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/SaveConfirm.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/LoadSaveSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/DataHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/OscHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/SendController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
         <option value="$PROJECT_DIR$/Assets/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
+        <option value="$PROJECT_DIR$/Assets/SendController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" />
       </list>
     </option>
   </component>
@@ -181,8 +134,16 @@
       <workItem from="1605094217459" duration="4803000" />
       <workItem from="1605457832736" duration="9932000" />
       <workItem from="1606674995964" duration="5364000" />
-      <workItem from="1606832772571" duration="2458000" />
+      <workItem from="1606832772571" duration="4311000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
+      <created>1606835386297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606835386297</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +166,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added Data/Midi/Osc Handlers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Data/Midi/Osc Handlers." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1387" height="187" key="GridCell.Tab.0.bottom" timestamp="1606680549875">
@@ -287,13 +250,18 @@
     </state>
     <state width="1387" height="187" key="GridCell.Tab.3.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606680549876" />
     <state width="2068" height="264" key="GridCell.Tab.3.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
-    <state x="1529" y="0" width="1550" height="1694" key="dock-window-1" timestamp="1606834415358">
+    <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog" timestamp="1606835503270">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1529" y="0" width="1550" height="1694" key="dock-window-1/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606834415358" />
-    <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup" timestamp="1605466472010">
+    <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606835503270" />
+    <state x="1530" y="0" width="1549" height="1694" key="dock-window-1" timestamp="1606836011978">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
+    <state x="1530" y="0" width="1549" height="1694" key="dock-window-1/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606836011978" />
+    <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup" timestamp="1606836025660">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606836025660" />
     <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605466472010" />
   </component>
 </project>

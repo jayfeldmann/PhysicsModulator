@@ -11,9 +11,6 @@ public class SendController : MonoBehaviour
     public OscHandler oscHandler;
     public MidiHandler midiHanler;
 
-    private void Awake()
-    {
-        oscHandler = GetComponent<OscHandler>();
-        midiHanler = GetComponent<MidiHandler>();
-    }
+    public string[] sendModulators;
+    public int sendModulatorIndex;
 }

@@ -103,6 +103,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 5982824099159299296}
   _normalColor: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
   _activeColor: {r: 0.18039216, g: 0.8, b: 0.44313726, a: 1}
+  sendController: {fileID: 8232290532785997772}
   sendChannel: -1
   sendCC: -1
   isActive: 0
@@ -173,3 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac6f32575a71b54b9bf10c0077e4bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
+  oscHandler: {fileID: 1291169254183413806}
+  midiHanler: {fileID: 7937106830423026984}

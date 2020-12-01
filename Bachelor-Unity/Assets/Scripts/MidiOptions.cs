@@ -5,13 +5,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoidOptions : MonoBehaviour
+public class MidiOptions : MonoBehaviour
 {
-    public static BoidOptions instance;
+    public static MidiOptions instance;
 
     public static bool isActive = false;
 
-    public static Boid activeBoid;
+    public static SendController sendController;
 
     [SerializeField] private TMP_InputField _sendChannel;
     [SerializeField] private TMP_InputField _sendCC;
@@ -31,10 +31,9 @@ public class BoidOptions : MonoBehaviour
 
     private void OnEnable()
     {
-        if (activeBoid)
+        if (sendController.gameObject)
         {
             isActive = true;
-            activeBoid.SelectBoid();
             ShowSettings();
         }
     }
@@ -42,7 +41,6 @@ public class BoidOptions : MonoBehaviour
     private void OnDisable()
     {
         SaveSettings();
-        activeBoid.SelectBoid();
         isActive = false;
     }
 
@@ -52,9 +50,16 @@ public class BoidOptions : MonoBehaviour
     }
     private void ShowSettings()
     {
-        _sendChannel.text = activeBoid.sendChannel.ToString();
-        _sendCC.text = activeBoid.sendCC.ToString();
-        _sendMidiToggle.isOn = activeBoid.isActive;
+        var midi = sendController.midiHanler;
+        _sendChannel.text = midi.midiChannel.ToString();
+        _sendCC.text = midi.midiCC.ToString();
+        _sendMidiToggle.isOn = sendController.isActive;
+        LoadDropdown();
+    }
+
+    private void LoadDropdown()
+    {
+        //TODO: load Dropdown values/items from sendController.
     }
 
     private void SaveSettings()
@@ -71,10 +76,13 @@ public class BoidOptions : MonoBehaviour
             return;
         }
 
-        activeBoid.sendChannel = channel;
-        activeBoid.sendCC = cc;
-        activeBoid.SetSendMod(_sendModDropdown.value);
-        activeBoid.isActive = _sendMidiToggle.isOn;
+        var midi = sendController.midiHanler;
+        midi.midiChannel = channel;
+        midi.midiCC = cc;
+        
+        //TODO: Schlaue lösung für send Mod Dropdown.
+        sendController.sendModulatorIndex = _sendModDropdown.value;
+        sendController.isActive = _sendMidiToggle.isOn;
     }
     
 }
