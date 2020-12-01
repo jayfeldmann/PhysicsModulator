@@ -15,13 +15,15 @@ public class Boid : MonoBehaviour
     [SerializeField] private Color _normalColor = default;
     [SerializeField] private Color _activeColor = default;
 
+    public SendController sendController;
+
     private Camera _mainCamera;
     private Vector2 _screenBounds;
     private float _objectWidth;
     private float _objectHeight;
 
-    public int sendChannel = -1;
-    public int sendCC = -1;
+    public int sendChannel = 1;
+    public int sendCC = 1;
 
     public bool isActive = false; //Should Boid send MIDI or not.
     public bool isSelected = false;
@@ -73,65 +75,74 @@ public class Boid : MonoBehaviour
         _objectWidth = bounds.extents.x;
         _objectHeight = bounds.extents.y;
     }
-
-    public int GetXPosAsMidiValue()
+    
+    public int GetXPosAsClampedValue(int lowerBorder, int upperBorder)
     {
         var x = Mathf.InverseLerp(_screenBounds.x * -1,_screenBounds.x, transform.position.x);
-        x *= 127;
+        x *= upperBorder;
         int returnInt = Mathf.CeilToInt(x);
-        if(x>127) throw new Exception("x is over 127. Your Maths are Wrong!");
+        returnInt = Mathf.Clamp(returnInt, lowerBorder, upperBorder);
         return returnInt;
     }
     
-    public int GetYPosAsMidiValue()
+    public int GetYPosAsClampedValue(int lowerBorder, int upperBorder)
     {
         var y = Mathf.InverseLerp(_screenBounds.y * -1,_screenBounds.y, transform.position.y);
-        y *= 127;
+        y *= upperBorder;
         int returnInt = Mathf.CeilToInt(y);
-        if(y>127) throw new Exception("x is over 127. Your Maths are Wrong!");
+        returnInt = Mathf.Clamp(returnInt, lowerBorder, upperBorder);
         return returnInt;
     }
+
+    public int GetXPosAsMidiValue()
+    {
+        return GetXPosAsClampedValue(0, 127);
+    }
+
+    public int GetYPosAsMidiValue()
+    {
+        return GetYPosAsClampedValue(0, 127);
+    }
+    
+
     
     private void Update()
     {
         MoveBoid();
-        if (isActive)
+        if (sendController.isActive)
         {
-            if (sendChannel >= 0 && sendCC >= 0 && sendChannel <=16)
+            if (Settings.SendMode == SendMode.MIDI)
             {
-                HandleMidi();    
-            }    
+                if (sendChannel >= 0 && sendCC >= 0 && sendChannel <=16)
+                {
+                    HandleMidiValue();    
+                }   
+            }
+ 
         }
         
     }
 
-    private void HandleMidi()
+    private void HandleMidiValue()
     {
-        int value = -1;
+        //get last midi value, in order to not JUMP if there is a false value.
+        int value = sendController.midiHanler.midiValue;
+        bool hasChanged = false;
         switch (sendModulator)
         {
             case SendModulator.PosX:
                 value = GetXPosAsMidiValue();
+                hasChanged = true;
                 break;
             case SendModulator.PosY:
                 value = GetYPosAsMidiValue();
+                hasChanged = true;
                 break;
         }
-        if (value>=0) SendMidi(value);
+        if (hasChanged && value>=0) sendController.midiHanler.midiValue = value;
     }
 
-    private void SendMidi(int value)
-    {
-        var activeDevice = MidiDeviceManager.activeMidiDevice;
-        if (activeDevice >=0)
-        {
-            using (MidiOut midiOut = new MidiOut(activeDevice))
-            {
-                MidiMessage message = MidiMessage.ChangeControl(sendCC,value,sendChannel);
-                midiOut.Send(message.RawData);
-            }
-        }
-    }
+
 
     private void OnMouseDown()
     {

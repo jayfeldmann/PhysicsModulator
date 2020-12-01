@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+public enum SendMode
+{
+    MIDI,
+    OSC
+}
+
 public class Settings : MonoBehaviour
 {
     public static bool isActive = false;
@@ -13,8 +19,11 @@ public class Settings : MonoBehaviour
     public static int oscInPort = 1234;
     public static string oscOutIp = "127.0.0.1";
     public static int oscOutPort = 6161;
+    public static SendMode SendMode;
 
     public OSC osc;
+
+
 
     private void Awake()
     {
