@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanel: {fileID: 1249822424}
-  boidOptionsPanel: {fileID: 1347512311}
+  midiOptionsPanel: {fileID: 1347512311}
   loadSaveSettings: {fileID: 1249822428}
 --- !u!1 &689192420
 GameObject:
@@ -5629,7 +5629,7 @@ GameObject:
   - component: {fileID: 1347512313}
   - component: {fileID: 1347512315}
   m_Layer: 5
-  m_Name: BoidOptionsPanel
+  m_Name: MidiOptionsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

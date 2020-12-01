@@ -19,21 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Added Data/Midi/Osc Handlers.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SendController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SendController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/5e/5e3a978b74c1d2571ef3dc6cf9ade2b8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/5e/5e3a978b74c1d2571ef3dc6cf9ade2b8.json" afterDir="false" />
-    </list>
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +120,7 @@
       <workItem from="1605094217459" duration="4803000" />
       <workItem from="1605457832736" duration="9932000" />
       <workItem from="1606674995964" duration="5364000" />
-      <workItem from="1606832772571" duration="4311000" />
+      <workItem from="1606832772571" duration="4368000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -143,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606835386297</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed Boid panel to be more General Purpose. Changed to MIDI Panel.">
+      <created>1606837119153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606837119153</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +160,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added Data/Midi/Osc Handlers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Data/Midi/Osc Handlers." />
+    <MESSAGE value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1387" height="187" key="GridCell.Tab.0.bottom" timestamp="1606680549875">
@@ -254,6 +248,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606835503270" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1606837121495">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606837121495" />
     <state x="1530" y="0" width="1549" height="1694" key="dock-window-1" timestamp="1606836011978">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
