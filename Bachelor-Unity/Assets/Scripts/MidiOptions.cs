@@ -59,7 +59,9 @@ public class MidiOptions : MonoBehaviour
 
     private void LoadDropdown()
     {
-        //TODO: load Dropdown values/items from sendController.
+        _sendModDropdown.ClearOptions();
+        _sendModDropdown.AddOptions(sendController.sendModulators);
+        _sendModDropdown.value = 0;
     }
 
     private void SaveSettings()
@@ -80,7 +82,6 @@ public class MidiOptions : MonoBehaviour
         midi.midiChannel = channel;
         midi.midiCC = cc;
         
-        //TODO: Schlaue lösung für send Mod Dropdown.
         sendController.sendModulatorIndex = _sendModDropdown.value;
         sendController.isActive = _sendMidiToggle.isOn;
     }

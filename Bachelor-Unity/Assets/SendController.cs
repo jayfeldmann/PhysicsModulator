@@ -11,6 +11,6 @@ public class SendController : MonoBehaviour
     public OscHandler oscHandler;
     public MidiHandler midiHanler;
 
-    public string[] sendModulators;
+    public List<string> sendModulators;
     public int sendModulatorIndex;
 }

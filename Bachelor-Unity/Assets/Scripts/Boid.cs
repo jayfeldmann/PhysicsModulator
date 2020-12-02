@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using NAudio.Midi;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Boid : MonoBehaviour
@@ -24,35 +19,58 @@ public class Boid : MonoBehaviour
 
     public int sendChannel = 1;
     public int sendCC = 1;
-
-    public bool isActive = false; //Should Boid send MIDI or not.
+    
     public bool isSelected = false;
 
-    public SendModulator sendModulator = SendModulator.PosX;
-    public enum SendModulator
-    {
-        PosX,
-        PosY
-    }
+    public Rigidbody2D rigidBody2d;
+
+    public GameObject target;
+
+    //Boid specific movement Variables
+    private float mass = 1;
+    private Vector2 _velocity = new Vector2(0,0);
+    private Vector2 _acceleration = new Vector2(0,0);
+    private float maxSpeed = 4;
+    private float maxForce = 0.1f;
+
     private void Awake()
     {
         _mainCamera = Camera.main;
     }
-
-    public void SetSendMod(int mod)
+    
+    private void MoveBoid()
     {
-        switch (mod)
-        {
-            case 0:
-                sendModulator = SendModulator.PosX;
-                break;
-            case 1:
-                sendModulator = SendModulator.PosY;
-                break;
-            default:
-                sendModulator = SendModulator.PosX;
-                break;
-        }
+        Vector2 targetPos = target.transform.position;
+        TeleportToOtherSide();
+        Debug.DrawRay(transform.position,transform.up*8);
+
+        SeekTarget(targetPos);
+        
+        _velocity += _acceleration;
+        _velocity = Vector2.ClampMagnitude(_velocity,maxSpeed);
+        
+        transform.position +=  new Vector3(_velocity.x,_velocity.y,0) * Time.deltaTime;
+
+        _acceleration *= 0;
+
+    }
+
+    private void ApplyForce(Vector2 force)
+    {
+        _acceleration += force;
+    }
+
+    private void SeekTarget(Vector3 targetPosition)
+    {
+        Vector2 desiredVelocity = targetPosition - transform.position;
+        desiredVelocity.Normalize();
+        desiredVelocity *= maxSpeed;
+        
+        Vector2 steer = desiredVelocity - _velocity;
+        
+        steer = Vector2.ClampMagnitude(steer, maxForce);
+        
+        ApplyForce(steer);
     }
 
     public void SelectBoid()
@@ -68,12 +86,15 @@ public class Boid : MonoBehaviour
             isSelected = true;
         }
     }
+
+
     private void Start()
     {
         _screenBounds = _mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, _mainCamera.transform.position.z));
         var bounds = _spriteRenderer.bounds;
         _objectWidth = bounds.extents.x;
         _objectHeight = bounds.extents.y;
+        target = GameObject.Find("Target");
     }
     
     public int GetXPosAsClampedValue(int lowerBorder, int upperBorder)
@@ -128,18 +149,49 @@ public class Boid : MonoBehaviour
         //get last midi value, in order to not JUMP if there is a false value.
         int value = sendController.midiHanler.midiValue;
         bool hasChanged = false;
-        switch (sendModulator)
+        switch (sendController.sendModulators[sendController.sendModulatorIndex])
         {
-            case SendModulator.PosX:
+            case "PosX":
                 value = GetXPosAsMidiValue();
                 hasChanged = true;
                 break;
-            case SendModulator.PosY:
+            case "PosY":
                 value = GetYPosAsMidiValue();
                 hasChanged = true;
                 break;
+            default:
+                value = GetXPosAsMidiValue();
+                hasChanged = true;
+                Debug.LogError("Modulator in BOID not found. Please check Sendcontroller Modulators list. Using Default Modulator X Position.");
+                break;
         }
         if (hasChanged && value>=0) sendController.midiHanler.midiValue = value;
+    }
+
+    private void HandleOscValue()
+    {
+        int value = sendController.oscHandler.oscValue;
+        bool hasChanged = false;
+        var osc = sendController.oscHandler;
+        switch (sendController.sendModulators[sendController.sendModulatorIndex])
+        {
+            //TODO: Add Upper and Lower border controls. After OSC Panel created.
+            case "PosX":
+                value = GetXPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
+                hasChanged = true;
+                break;
+            case "PosY":
+                value = GetYPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
+                hasChanged = true;
+                break;
+            default:
+                value = GetXPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
+                hasChanged = true;
+                Debug.LogError("Modulator in BOID not found. Please check Sendcontroller Modulators list. Using Default Modulator X Position.");
+                break;
+        }
+
+        if (hasChanged) sendController.oscHandler.oscValue = value;
     }
 
 
@@ -154,11 +206,7 @@ public class Boid : MonoBehaviour
         }
     }
 
-    private void MoveBoid()
-    {
-        TeleportToOtherSide();
-        transform.position += transform.right * (boidSpeed * Time.deltaTime);
-    }
+
 
     private void TeleportToOtherSide()
     {
