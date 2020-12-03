@@ -16,6 +16,7 @@
           <e p="BoidArea.cs" t="Include" />
           <e p="BoidAreaTest.cs" t="Include" />
           <e p="BoidSpawner.cs" t="Include" />
+          <e p="ExtensionMethods.cs" t="Include" />
           <e p="Midi" t="Include">
             <e p="MidiDeviceManager.cs" t="Include" />
             <e p="MidiHelper.cs" t="Include" />

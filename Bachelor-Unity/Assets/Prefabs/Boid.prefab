@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5206301299202151690}
   - component: {fileID: 6280902233407299923}
-  - component: {fileID: 61210623784227326}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -83,32 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &61210623784227326
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5670783205020082570}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 7.68}
-    newSize: {x: 10.24, y: 7.68}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.24, y: 7.68}
-  m_EdgeRadius: 0
 --- !u!1 &8503276907705927906
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +95,7 @@ GameObject:
   - component: {fileID: 7937106830423026984}
   - component: {fileID: 1291169254183413806}
   - component: {fileID: 8232290532785997772}
-  - component: {fileID: -8502112727385447063}
+  - component: {fileID: 5582413439674702608}
   m_Layer: 0
   m_Name: Boid
   m_TagString: Untagged
@@ -165,6 +138,7 @@ MonoBehaviour:
   sendChannel: -1
   sendCC: -1
   isSelected: 0
+  target: {fileID: 0}
 --- !u!114 &7937106830423026984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,24 +189,29 @@ MonoBehaviour:
   - PosX
   - PosY
   sendModulatorIndex: 0
---- !u!50 &-8502112727385447063
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &5582413439674702608
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8503276907705927906}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.68, y: 10.24}
+  m_EdgeRadius: 0
