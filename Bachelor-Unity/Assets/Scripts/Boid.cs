@@ -65,11 +65,12 @@ public class Boid : MonoBehaviour
 
     private void Wander()
     { 
-        float spawnAreaAngle = Random.Range(-10,10);
-        float spawnDistance = Random.Range(2,3);
-
-        Vector2 target = ExtensionMethods.Rotate(_velocity,spawnAreaAngle) * spawnDistance;
-        Debug.DrawLine(transform.position,target);
+        float spawnAreaAngle = Random.Range(-35,35);
+        float spawnDistance = 2;
+ 
+        Vector2 target = new Vector2(); 
+        target = ExtensionMethods.Rotate(_velocity,spawnAreaAngle) * spawnDistance;
+        //Debug.DrawLine(transform.position,target);
         SeekTarget(target);
     }
 
