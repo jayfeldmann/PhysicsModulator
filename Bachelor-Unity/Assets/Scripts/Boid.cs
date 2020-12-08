@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Security.Cryptography;
+using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Boid : MonoBehaviour
 {
-    public float boidSpeed = 5;
-
     [SerializeField] private SpriteRenderer _spriteRenderer = default;
 
     [SerializeField] private Color _normalColor = default;
@@ -22,16 +24,17 @@ public class Boid : MonoBehaviour
     
     public bool isSelected = false;
 
-    public GameObject target;
+    [FormerlySerializedAs("target")] public GameObject boidTarget;
 
     //Boid specific movement Variables
     private float mass = 1;
-    private Vector2 _velocity = new Vector2(70,70);
+    private Vector2 _velocity = new Vector2(0,0);
     private Vector2 _acceleration = new Vector2(0,0);
     private float maxSpeed = 70;
     private float maxForce = 1f;
     private int arriveRadius = 50;
     private int boundryOffset = 10;
+    private float wanderAngle = 0;
 
     private void Awake()
     {
@@ -40,20 +43,48 @@ public class Boid : MonoBehaviour
     
     private void MoveBoid()
     {
-        Vector2 targetPos = target.transform.position;
+        //Vector2 targetPos = target.transform.position;
         //TeleportToOtherSide();
         //Debug.DrawRay(transform.position,transform.up*8);
-        AvoidWalls();
-        //SeekTarget(targetPos);
         
+        Wander();
+        AvoidWalls();
+        
+        //SeekTarget(targetPos);
+
+        // Do not touch
         _velocity += _acceleration;
         _velocity = Vector2.ClampMagnitude(_velocity,maxSpeed);
-        
         LookAt2D(_velocity);
         transform.position +=  new Vector3(_velocity.x,_velocity.y,0) * Time.deltaTime;
-
+        // Do not touch
+        
         _acceleration *= 0;
 
+    }
+
+    private void Wander()
+    { 
+        float spawnAreaAngle = Random.Range(-10,10);
+        float spawnDistance = Random.Range(2,3);
+
+        Vector2 target = ExtensionMethods.Rotate(_velocity,spawnAreaAngle) * spawnDistance;
+        Debug.DrawLine(transform.position,target);
+        SeekTarget(target);
+    }
+
+    private float Heading2D(Vector2 input)
+    {
+        // Berechnet winkel zwichen OBEN und inputwinkel
+        float angle = Vector2.Angle( Vector2.up,input);
+        Vector3 cross = Vector3.Cross( Vector2.up,input);
+
+        if (cross.z>0)
+        {
+            angle = 360 - angle;
+        }
+
+        return angle;
     }
 
     private void LookAt2D(Vector2 target)
@@ -103,10 +134,6 @@ public class Boid : MonoBehaviour
             ApplyForce(steer);
         }
     }
-    private void WanderMovement()
-    {
-        
-    }
 
     private void SeekTarget(Vector3 targetPosition)
     {
@@ -153,7 +180,7 @@ public class Boid : MonoBehaviour
         var bounds = _spriteRenderer.bounds;
         _objectWidth = bounds.extents.x;
         _objectHeight = bounds.extents.y;
-        target = GameObject.Find("Target");
+        boidTarget = GameObject.Find("Target");
     }
     
     public int GetXPosAsClampedValue(int lowerBorder, int upperBorder)

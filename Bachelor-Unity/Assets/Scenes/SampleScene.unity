@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boidPrefab: {fileID: 8503276907705927906, guid: de575ea69f9a1d04b9ac4a00978d019f, type: 3}
-  boidCount: 10
+  boidCount: 1
   spawnOffset: 1
   mainCamera: {fileID: 519420031}
   screenBounds: {x: 0, y: 0}
