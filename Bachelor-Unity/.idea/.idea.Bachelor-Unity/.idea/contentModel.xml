@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="DataHandler.cs" t="Include" />
+        <e p="Flowfield.cs" t="Include" />
+        <e p="FlowVector.cs" t="Include" />
         <e p="LoadSaveSettings.cs" t="Include" />
         <e p="MidiHandler.cs" t="Include" />
         <e p="OscHandler.cs" t="Include" />
