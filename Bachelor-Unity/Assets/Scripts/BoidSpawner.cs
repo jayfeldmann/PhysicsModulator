@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class BoidSpawner : MonoBehaviour
 {
+   public static BoidSpawner instance;
    public GameObject boidPrefab;
    public int boidCount;
    public float spawnOffset = 1.0f;
@@ -14,7 +15,15 @@ public class BoidSpawner : MonoBehaviour
    public Camera mainCamera;
    public Vector2 screenBounds;
 
-   public List<GameObject> cachedBoids;
+   public List<Boid> cachedBoids;
+
+   private void Awake()
+   {
+      if (!instance)
+      {
+         instance = this;
+      }
+   }
 
    private void Start()
    {
@@ -36,6 +45,6 @@ public class BoidSpawner : MonoBehaviour
       boid.transform.position = spawnPos;
       var randomAngle = Random.Range(0, 360);
       boid.transform.Rotate(0,0,randomAngle);
-      cachedBoids.Add(boid);
+      cachedBoids.Add(boid.GetComponent<Boid>());
    }
 }

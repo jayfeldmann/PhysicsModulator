@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -28,13 +29,14 @@ public class Boid : MonoBehaviour
 
     //Boid specific movement Variables
     private float mass = 1;
-    private Vector2 _velocity = new Vector2(0,0);
+    [HideInInspector]
+    public Vector2 velocity = new Vector2(0,0);
     private Vector2 _acceleration = new Vector2(0,0);
-    private float maxSpeed = 70;
-    private float maxForce = 1f;
-    private int arriveRadius = 50;
-    private int boundryOffset = 10;
-    private float wanderAngle = 0;
+    private float maxSpeed = 15;
+    private float maxForce = 0.5f;
+    private int arriveRadius = 20;
+    private int boundryOffset = 1;
+    private float boidRadius = 1f;
 
     private void Awake()
     {
@@ -43,35 +45,141 @@ public class Boid : MonoBehaviour
     
     private void MoveBoid()
     {
-        //Vector2 targetPos = target.transform.position;
         //TeleportToOtherSide();
-        //Debug.DrawRay(transform.position,transform.up*8);
-        
-        Wander();
-        AvoidWalls();
+
+        Flock(BoidSpawner.instance.cachedBoids);
         
         //SeekTarget(targetPos);
 
         // Do not touch
-        _velocity += _acceleration;
-        _velocity = Vector2.ClampMagnitude(_velocity,maxSpeed);
-        LookAt2D(_velocity);
-        transform.position +=  new Vector3(_velocity.x,_velocity.y,0) * Time.deltaTime;
+        velocity += _acceleration;
+        velocity = Vector2.ClampMagnitude(velocity,maxSpeed);
+        LookAt2D(velocity);
+        transform.position +=  new Vector3(velocity.x,velocity.y,0) * Time.deltaTime;
         // Do not touch
         
         _acceleration *= 0;
 
     }
 
-    private void Wander()
+    private void Flock(List<Boid> boids)
+    {
+        Vector2 sep = Separate(boids);
+        Vector2 ali = Align(boids);
+        Vector2 coh = Cohesion(boids);
+        Vector2 wander = Wander();
+        Vector2 avoidWalls = AvoidWalls();
+        //Weighing Forces
+        sep *= 1.5f;
+        ali *= 1f;
+        coh *= 1f;
+        wander *= 0.3f;
+        avoidWalls *= 2f;
+        //Add Forces to Acceleration
+        ApplyForce(sep);
+        ApplyForce(ali);
+        ApplyForce(coh);
+        ApplyForce(wander);
+        ApplyForce(avoidWalls);
+    }
+
+    Vector2 Separate(List<Boid> boids) //Checking near boids and steers away;
+    {
+        float desiredSeparation = 10.0f;
+        Vector2 steer = new Vector2(0,0);
+        int count = 0;
+        foreach (var boid in boids)
+        {
+            float dist = GetBoidDistance(boid);
+            if (dist>0 && dist<desiredSeparation)
+            {
+                Vector2 diff = transform.position - boid.transform.position;
+                diff.Normalize();
+                diff /= dist;
+                steer += diff;
+                count++;
+            }
+        }
+
+        if (count>0)
+        {
+            steer /= (float) count;
+        }
+
+        if (steer.magnitude>0) //Reynolds SteeringL: steering = desiredVelocity - velocity
+        {
+            steer.Normalize();
+            steer *= maxSpeed;
+            steer -= velocity;
+            steer = Vector2.ClampMagnitude(steer, maxForce);
+        }
+        return steer;
+    }
+
+    Vector2 Align(List<Boid> boids) //Calc Average velocity for nearby Boids
+    {
+        float neighbordist = 5f;
+        Vector2 sum = new Vector2(0,0);
+        int count = 0;
+        foreach (var boid in boids)
+        {
+            float dist = GetBoidDistance(boid);
+            if (dist>0 && dist < neighbordist)
+            {
+                sum += boid.velocity;
+                count++;
+            }
+        }
+
+        if (count>0)
+        {
+            sum /= (float) count;
+            sum.Normalize();
+            sum *= maxSpeed;
+            Vector2 steer = sum - velocity;
+            steer = Vector2.ClampMagnitude(steer, maxForce);
+            return steer;
+        }
+        return Vector2.zero;
+    }
+
+    Vector2 Cohesion(List<Boid> boids)
+    {
+        float neighbourdist = 5f;
+        Vector2 sum = new Vector2(0,0);
+        int count = 0;
+        foreach (var boid in boids)
+        {
+            float dist = GetBoidDistance(boid);
+            if (dist > 0 && dist < neighbourdist)
+            {
+                sum += new Vector2(boid.transform.position.x,boid.transform.position.y);
+                count++;
+            }
+        }
+
+        if (count > 0)
+        {
+            sum /= (float) count;
+            return SeekTarget(sum);
+        }
+
+        return Vector2.zero;
+    }
+
+    float GetBoidDistance(Boid otherBoid)
+    {
+        return Vector2.Distance(transform.position, otherBoid.transform.position);
+    }
+
+    private Vector2 Wander()
     { 
         float spawnAreaAngle = Random.Range(-35,35);
         float spawnDistance = 2;
  
         Vector2 target = new Vector2(); 
-        target = ExtensionMethods.Rotate(_velocity,spawnAreaAngle) * spawnDistance;
-        //Debug.DrawLine(transform.position,target);
-        SeekTarget(target);
+        target = ExtensionMethods.Rotate(velocity,spawnAreaAngle) * spawnDistance;
+        return SeekTarget(target);
     }
 
     private float Heading2D(Vector2 input)
@@ -99,30 +207,30 @@ public class Boid : MonoBehaviour
         _acceleration += force;
     }
 
-    private void AvoidWalls()
+    private Vector2 AvoidWalls()
     {
         var pos = transform.position;
         Vector2 desired = new Vector2();
         bool isWall = false;
         if (pos.x >= _screenBounds.x - _objectWidth-boundryOffset)
         {
-            desired = new Vector2(-maxSpeed,_velocity.y);
+            desired = new Vector2(-maxSpeed,velocity.y);
             isWall = true;
         } 
         else if (pos.x <= _screenBounds.x *-1 + _objectWidth +boundryOffset)
         {
-            desired = new Vector2(maxSpeed,_velocity.y);  
+            desired = new Vector2(maxSpeed,velocity.y);  
             isWall = true;
         }
 
         if (pos.y >= _screenBounds.y - _objectHeight-boundryOffset)
         {
-            desired = new Vector2(_velocity.x,-maxSpeed);
+            desired = new Vector2(velocity.x,-maxSpeed);
             isWall = true;
         }
         else if (pos.y <= _screenBounds.y *-1 + _objectHeight+boundryOffset)
         {
-            desired = new Vector2(_velocity.x,maxSpeed);
+            desired = new Vector2(velocity.x,maxSpeed);
             isWall = true;
         }
 
@@ -130,13 +238,15 @@ public class Boid : MonoBehaviour
         {
             desired.Normalize();
             desired *= maxSpeed;
-            var steer = desired-_velocity;
+            var steer = desired-velocity;
             steer = Vector2.ClampMagnitude(steer,maxForce);
-            ApplyForce(steer);
+            return steer;
         }
+
+        return Vector2.zero;
     }
 
-    private void SeekTarget(Vector3 targetPosition)
+    private Vector2 SeekTarget(Vector3 targetPosition) //Seeks target Reynolds method. Closer to target, it slows down
     {
         Vector2 desiredVelocity = targetPosition - transform.position;
 
@@ -153,11 +263,11 @@ public class Boid : MonoBehaviour
             desiredVelocity *= maxSpeed;
         }
 
-        Vector2 steer = desiredVelocity - _velocity;
+        Vector2 steer = desiredVelocity - velocity;
         
         steer = Vector2.ClampMagnitude(steer, maxForce);
-        
-        ApplyForce(steer);
+
+        return steer;
     }
 
     public void SelectBoid()
