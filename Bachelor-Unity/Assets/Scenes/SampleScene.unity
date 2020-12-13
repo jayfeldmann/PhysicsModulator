@@ -850,7 +850,6 @@ GameObject:
   m_Component:
   - component: {fileID: 197334917}
   - component: {fileID: 197334916}
-  - component: {fileID: 197334918}
   m_Layer: 0
   m_Name: Boids
   m_TagString: Untagged
@@ -871,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boidPrefab: {fileID: 8503276907705927906, guid: de575ea69f9a1d04b9ac4a00978d019f, type: 3}
-  boidCount: 0
+  boidCount: 20
   spawnOffset: 1
   mainCamera: {fileID: 519420031}
   screenBounds: {x: 0, y: 0}
@@ -890,19 +889,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &197334918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197334915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969312f1f8a3eac45bb75493d6eb1135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugArrow: {fileID: 3588205718287626347, guid: 36ac3cbc3cfefdf4ba004cdb1c006b4e, type: 3}
 --- !u!1 &217741954
 GameObject:
   m_ObjectHideFlags: 0

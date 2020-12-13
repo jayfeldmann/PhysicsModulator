@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Added Flocking Behaviour">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
-    </list>
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Updated Flocking behaviour." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +130,7 @@
       <workItem from="1607445375303" duration="6679000" />
       <workItem from="1607452415482" duration="1711000" />
       <workItem from="1607793663387" duration="5650000" />
-      <workItem from="1607874726340" duration="3879000" />
+      <workItem from="1607874726340" duration="3944000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -159,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607878302467</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated Flocking behaviour.">
+      <created>1607878867691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607878867691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +186,8 @@
     <MESSAGE value="Added Data/Midi/Osc Handlers." />
     <MESSAGE value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
     <MESSAGE value="Added Flocking Behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Flocking Behaviour" />
+    <MESSAGE value="Updated Flocking behaviour." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Flocking behaviour." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1764" height="248" key="GridCell.Tab.0.bottom" timestamp="1607799318348">
@@ -276,10 +278,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606835503270" />
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1606837121495">
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1607878870187">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1606837121495" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1607878870187" />
     <state x="1530" y="0" width="1549" height="1694" key="dock-window-1" timestamp="1606836011978">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
