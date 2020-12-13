@@ -19,61 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Changed Boid panel to be more General Purpose. Changed to MIDI Panel.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Added Flocking Behaviour">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/0593722d294b13c50bf773e166b36157" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0f007932a8501917e422c7761f3aad30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/10/10bfee2e4d857a234db4b0e817b418d3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/18703a85db72d366362a4b84e9ccc401" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/18ab1c81e26d13a6b3ed985c53367b51" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/22/227360bda6cee473aa7a3a744a17c981" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/24/248f201390b64ca7b35f03bfeda3b22b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2d54ea447f4725868d49ac49220436fb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/32/32f624188b866f12e263a7e37ad9a4af" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3dad5296808d7c8d80568fc70d75b861" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/52/5291c49e571e65c3e5d5c95edf335700" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5b/5b4821cba4fb4dc2a208831f379fc099" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c4fd276fe0b4064c2e67277d1d4ae22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/60e59d4c0a9dba548ea80e5e5581a29f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/69/6997d689d53ab1ceae7e9c0741f6c4ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7ea1eb978419256170edd35ce3dc76b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/8345f416f95ee8d7daea009ddf18a90c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/835f2478045ae7fb75956d1273ab608b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/8735e3ba20c948d94650b7fc28ee22c7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8b/8bfadd914c0496db1df7cce1d7251339" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/92/929d57fe3813faabf9bdf92607386a6d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/9522d92a6a3c8be00a39e03daa45aae4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/96/966c3254625b84ad72732443f866084f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/97/97984d1fd5873a061cc94121bbb3a29d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/98/987632257e037527ab399293103579df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a0/a002dbe2e20e5624fb5d07600588d6a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a4/a4139c041ba1dfdfade9d4c3e076d280" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa6d88099aceca7c851422fb5f5a4301" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ac/ac738704e6a6742b86af3fa126959861" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ae/aea337e86512ba428a1f09f7e6df81c4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bc/bc281858bb6680aa900a8f143fa8b698" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2b63b7a066ed07edf23b9b80623e2d3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3e45b6f578fdcd17fcebd0cec90488a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d5db6499f216fb09e18024b42d9e2da4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e4/e4b18bb12632eedff18eb373bf6980b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e5/e5dce45c0e636f14bc071efe733cf3bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ed/edcce1c4984287e6fab7153676700a4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef1058463af7205e6ad5202974d686a8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f965a5bb5c76f66ee25a1cab094236a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/fa9f9e78371464a342a1114e452cd388" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fc/fc29a7b9384fa20de01080ca839c406c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fc/fc5a0a18b7800195142d3df26c3fa6f3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +136,7 @@
       <workItem from="1607445375303" duration="6679000" />
       <workItem from="1607452415482" duration="1711000" />
       <workItem from="1607793663387" duration="5650000" />
-      <workItem from="1607874726340" duration="3322000" />
+      <workItem from="1607874726340" duration="3879000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -201,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606837119153</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Flocking Behaviour">
+      <created>1607878302467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607878302467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +184,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added Data/Midi/Osc Handlers." />
     <MESSAGE value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
+    <MESSAGE value="Added Flocking Behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Flocking Behaviour" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1764" height="248" key="GridCell.Tab.0.bottom" timestamp="1607799318348">

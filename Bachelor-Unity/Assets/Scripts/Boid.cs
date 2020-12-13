@@ -33,10 +33,11 @@ public class Boid : MonoBehaviour
     public Vector2 velocity = new Vector2(0,0);
     private Vector2 _acceleration = new Vector2(0,0);
     private float maxSpeed = 15;
-    private float maxForce = 0.5f;
+    private float maxForce = 0.2f;
     private int arriveRadius = 20;
     private int boundryOffset = 1;
-    private float boidRadius = 1f;
+    private float desiredSeparation = 1.0f;
+    private float neighbourDistance = 2.0f;
 
     private void Awake()
     {
@@ -74,7 +75,7 @@ public class Boid : MonoBehaviour
         ali *= 1f;
         coh *= 1f;
         wander *= 0.3f;
-        avoidWalls *= 2f;
+        avoidWalls *= 1f;
         //Add Forces to Acceleration
         ApplyForce(sep);
         ApplyForce(ali);
@@ -85,7 +86,6 @@ public class Boid : MonoBehaviour
 
     Vector2 Separate(List<Boid> boids) //Checking near boids and steers away;
     {
-        float desiredSeparation = 10.0f;
         Vector2 steer = new Vector2(0,0);
         int count = 0;
         foreach (var boid in boids)
@@ -118,13 +118,12 @@ public class Boid : MonoBehaviour
 
     Vector2 Align(List<Boid> boids) //Calc Average velocity for nearby Boids
     {
-        float neighbordist = 5f;
         Vector2 sum = new Vector2(0,0);
         int count = 0;
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist>0 && dist < neighbordist)
+            if (dist>0 && dist < neighbourDistance)
             {
                 sum += boid.velocity;
                 count++;
@@ -145,13 +144,12 @@ public class Boid : MonoBehaviour
 
     Vector2 Cohesion(List<Boid> boids)
     {
-        float neighbourdist = 5f;
         Vector2 sum = new Vector2(0,0);
         int count = 0;
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist > 0 && dist < neighbourdist)
+            if (dist > 0 && dist < neighbourDistance)
             {
                 sum += new Vector2(boid.transform.position.x,boid.transform.position.y);
                 count++;
