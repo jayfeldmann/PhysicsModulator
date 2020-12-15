@@ -36,7 +36,7 @@ public class Boid : MonoBehaviour
     private float maxForce = 0.2f;
     private int arriveRadius = 20;
     private int boundryOffset = 1;
-    private float desiredSeparation = 1.0f;
+    private float desiredSeparation = 1f;
     private float neighbourDistance = 2.0f;
 
     private void Awake()
@@ -71,11 +71,11 @@ public class Boid : MonoBehaviour
         Vector2 wander = Wander();
         Vector2 avoidWalls = AvoidWalls();
         //Weighing Forces
-        sep *= 1.5f;
+        sep *= 1.3f;
         ali *= 1f;
-        coh *= 1f;
+        coh *= 1.1f;
         wander *= 0.3f;
-        avoidWalls *= 1f;
+        avoidWalls *= 1.2f;
         //Add Forces to Acceleration
         ApplyForce(sep);
         ApplyForce(ali);
@@ -106,7 +106,7 @@ public class Boid : MonoBehaviour
             steer /= (float) count;
         }
 
-        if (steer.magnitude>0) //Reynolds SteeringL: steering = desiredVelocity - velocity
+        if (steer.magnitude>0) //Reynolds Steering: steering = desiredVelocity - velocity
         {
             steer.Normalize();
             steer *= maxSpeed;
@@ -388,9 +388,7 @@ public class Boid : MonoBehaviour
 
         if (hasChanged) sendController.oscHandler.oscValue = value;
     }
-
-
-
+    
     private void OnMouseDown()
     {
         if (!isSelected)
@@ -400,8 +398,6 @@ public class Boid : MonoBehaviour
             SelectBoid();
         }
     }
-
-
 
     private void TeleportToOtherSide()
     {

@@ -19,7 +19,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Updated Flocking behaviour." />
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Updated Flocking behaviour.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/06/06dd0aebdc73d26658c46ce779ae7b9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/18ebc4ede4911bea580045e3c31c0f88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2c3e92a46be7f7f19fa158bdbbe8fa33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3e/3edf2ef1fa1e386b6b5f9a7852d469fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/4151f40fcfb6e20b8748dc1a7059848e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/4496243ec323b4bec964e41d57090856" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/49/49d74f281e73387fff81bbadb9394708" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/546509c961a74bddf78fcfbf84e8b7ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/54f51c7b5f80d24c215d38baf80d7d3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/69/69187a5d2a507e8077c94dd4c0a6b7d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/69/69b4b062193eff55339f2fce33d40ca7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6f/6f50d906decbda66c239303fbb5cf6b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/73/730445874f41c8beb7b0c382cb48f3e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/84e068c5d29eb841abf903e45a3262bf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/85/8597ccb46f8a1331c5cef617d84c1a3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/8743be65352b8f03380def2cd0f50b4b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8c/8c62a4f480908167cc3afc7976ae2246" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8d/8d5e39ecb2c37c51b059d8c23f49d968" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/92/92ee06ebf5b116525990ec02a07484c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/94115aee0f472b7d085b99394c8b3991" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa3ea06c895110ef7590a6af8dbb923b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab0ef225186d21994bf92825a7d485fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b922a029432ecde4ab7c729e06342665" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc22b6f5880af5a4f836405fbe9a0035" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d4/d4edc05e4c9b3b26c18d478b6449c9ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d9/d991b2b35cf4c66ead8120506c9e68f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e04987ff0ea797e007fc631cccda4f1e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/eb/eb933adbaca889b9a44d7813178cfd0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +72,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SaveConfirm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
@@ -131,6 +171,7 @@
       <workItem from="1607452415482" duration="1711000" />
       <workItem from="1607793663387" duration="5650000" />
       <workItem from="1607874726340" duration="3944000" />
+      <workItem from="1608048780057" duration="3537000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
