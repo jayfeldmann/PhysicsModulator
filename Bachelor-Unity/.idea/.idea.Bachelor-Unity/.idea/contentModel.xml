@@ -13,6 +13,7 @@
         <e p="MidiHandler.cs" t="Include" />
         <e p="OscHandler.cs" t="Include" />
         <e p="SaveConfirm.cs" t="Include" />
+        <e p="SaveManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Boid.cs" t="Include" />
           <e p="BoidArea.cs" t="Include" />

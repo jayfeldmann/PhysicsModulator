@@ -12,6 +12,7 @@ public class Boid : MonoBehaviour
 
     [SerializeField] private Color _normalColor = default;
     [SerializeField] private Color _activeColor = default;
+    [SerializeField] private Color _sendingColor = default;
 
     public SendController sendController;
 
@@ -42,6 +43,24 @@ public class Boid : MonoBehaviour
     private void Awake()
     {
         _mainCamera = Camera.main;
+    }
+    
+    private void Update()
+    {
+        SetBoidColor();
+        MoveBoid();
+        if (sendController.isActive)
+        {
+            if (Settings.SendMode == SendMode.MIDI)
+            {
+                if (sendChannel > 0 && sendCC > 0 && sendChannel <=16)
+                {
+                    HandleMidiValue();    
+                }   
+            }
+ 
+        }
+        
     }
     
     private void MoveBoid()
@@ -179,6 +198,31 @@ public class Boid : MonoBehaviour
         target = ExtensionMethods.Rotate(velocity,spawnAreaAngle) * spawnDistance;
         return SeekTarget(target);
     }
+    
+    private Vector2 SeekTarget(Vector3 targetPosition) //Seeks target Reynolds method. Closer to target, it slows down
+    {
+        Vector2 desiredVelocity = targetPosition - transform.position;
+
+        float d = desiredVelocity.magnitude;
+        desiredVelocity.Normalize();
+
+        if (d < arriveRadius)
+        {
+            float m = ExtensionMethods.Map(d, 0, arriveRadius, 0, maxSpeed);
+            desiredVelocity *= m;
+        }
+        else
+        {
+            desiredVelocity *= maxSpeed;
+        }
+
+        Vector2 steer = desiredVelocity - velocity;
+        
+        steer = Vector2.ClampMagnitude(steer, maxForce);
+
+        return steer;
+    }
+
 
     private float Heading2D(Vector2 input)
     {
@@ -244,42 +288,17 @@ public class Boid : MonoBehaviour
         return Vector2.zero;
     }
 
-    private Vector2 SeekTarget(Vector3 targetPosition) //Seeks target Reynolds method. Closer to target, it slows down
-    {
-        Vector2 desiredVelocity = targetPosition - transform.position;
-
-        float d = desiredVelocity.magnitude;
-        desiredVelocity.Normalize();
-
-        if (d < arriveRadius)
-        {
-            float m = ExtensionMethods.Map(d, 0, arriveRadius, 0, maxSpeed);
-            desiredVelocity *= m;
-        }
-        else
-        {
-            desiredVelocity *= maxSpeed;
-        }
-
-        Vector2 steer = desiredVelocity - velocity;
-        
-        steer = Vector2.ClampMagnitude(steer, maxForce);
-
-        return steer;
-    }
 
     public void SelectBoid()
     {
-        if (isSelected)
-        {
-            _spriteRenderer.color = _normalColor;
-            isSelected = false;
-        }
-        else
-        {
-            _spriteRenderer.color = _activeColor;
-            isSelected = true;
-        }
+        _spriteRenderer.color = _activeColor;
+        isSelected = true;
+    }
+
+    public void DeselectBoid()
+    {
+        _spriteRenderer.color = _normalColor;
+        isSelected = false;
     }
 
 
@@ -319,24 +338,20 @@ public class Boid : MonoBehaviour
     {
         return GetYPosAsClampedValue(0, 127);
     }
-    
 
-    
-    private void Update()
+    private void SetBoidColor()
     {
-        MoveBoid();
-        if (sendController.isActive)
+        if (!isSelected)
         {
-            if (Settings.SendMode == SendMode.MIDI)
+            if (sendController.isActive)
             {
-                if (sendChannel >= 0 && sendCC >= 0 && sendChannel <=16)
-                {
-                    HandleMidiValue();    
-                }   
+                _spriteRenderer.color = _sendingColor;
             }
- 
+            else
+            {
+                _spriteRenderer.color = _normalColor;
+            }
         }
-        
     }
 
     private void HandleMidiValue()
@@ -348,6 +363,7 @@ public class Boid : MonoBehaviour
         {
             case "PosX":
                 value = GetXPosAsMidiValue();
+                print(value);
                 hasChanged = true;
                 break;
             case "PosY":

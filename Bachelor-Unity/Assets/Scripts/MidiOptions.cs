@@ -42,6 +42,7 @@ public class MidiOptions : MonoBehaviour
     {
         SaveSettings();
         isActive = false;
+        sendController.gameObject.GetComponent<Boid>().DeselectBoid();
     }
 
     public void Disable()
@@ -85,5 +86,10 @@ public class MidiOptions : MonoBehaviour
         sendController.sendModulatorIndex = _sendModDropdown.value;
         sendController.isActive = _sendMidiToggle.isOn;
     }
-    
+
+    public void OnSendMidiToggle()
+    {
+        SaveSettings();
+    }
+
 }

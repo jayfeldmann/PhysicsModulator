@@ -133,11 +133,13 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 6280902233407299923}
   _normalColor: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
   _activeColor: {r: 0.18039216, g: 0.8, b: 0.44313726, a: 1}
+  _sendingColor: {r: 0.94509804, g: 0.76862746, b: 0.05882353, a: 1}
   sendController: {fileID: 8232290532785997772}
-  sendChannel: -1
-  sendCC: -1
+  sendChannel: 1
+  sendCC: 1
   isSelected: 0
   boidTarget: {fileID: 0}
+  velocity: {x: 0, y: 0}
 --- !u!114 &7937106830423026984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e458bf916f88eef4b8e70152cf629861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  midiChannel: 0
-  midiCC: 0
+  midiChannel: 1
+  midiCC: 1
   midiValue: 0
 --- !u!114 &1291169254183413806
 MonoBehaviour:
