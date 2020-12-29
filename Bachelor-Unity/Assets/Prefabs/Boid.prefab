@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 6280902233407299923}
-  _normalColor: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
+  _normalColor: {r: 0.20392157, g: 0.59607846, b: 0.85882354, a: 1}
   _activeColor: {r: 0.18039216, g: 0.8, b: 0.44313726, a: 1}
   _sendingColor: {r: 0.94509804, g: 0.76862746, b: 0.05882353, a: 1}
   sendController: {fileID: 8232290532785997772}

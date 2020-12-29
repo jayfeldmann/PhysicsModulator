@@ -363,7 +363,6 @@ public class Boid : MonoBehaviour
         {
             case "PosX":
                 value = GetXPosAsMidiValue();
-                print(value);
                 hasChanged = true;
                 break;
             case "PosY":
