@@ -48,7 +48,10 @@ public class Boid : MonoBehaviour
     private void Update()
     {
         SetBoidColor();
-        MoveBoid();
+        if (SimulationController.simulateMovement)
+        {
+            MoveBoid();
+        }
         if (sendController.isActive)
         {
             if (Settings.SendMode == SendMode.MIDI)
@@ -67,6 +70,7 @@ public class Boid : MonoBehaviour
     {
         //TeleportToOtherSide();
 
+        
         Flock(BoidSpawner.instance.cachedBoids);
         
         //SeekTarget(targetPos);

@@ -7,7 +7,8 @@ using UnityEngine;
 public enum SendMode
 {
     MIDI,
-    OSC
+    OSC,
+    DISABLED
 }
 
 public class Settings : MonoBehaviour
