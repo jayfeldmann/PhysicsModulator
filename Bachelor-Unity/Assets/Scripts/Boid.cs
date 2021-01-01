@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class Boid : MonoBehaviour
@@ -20,7 +17,8 @@ public class Boid : MonoBehaviour
     private Vector2 _screenBounds;
     private float _objectWidth;
     private float _objectHeight;
-
+    private int boundryOffset = 1;
+    
     public int sendChannel = 1;
     public int sendCC = 1;
     
@@ -29,16 +27,15 @@ public class Boid : MonoBehaviour
     [FormerlySerializedAs("target")] public GameObject boidTarget;
 
     //Boid specific movement Variables
-    private float mass = 1;
     [HideInInspector]
     public Vector2 velocity = new Vector2(0,0);
     private Vector2 _acceleration = new Vector2(0,0);
-    private float maxSpeed = 15;
-    private float maxForce = 0.2f;
-    private int arriveRadius = 20;
-    private int boundryOffset = 1;
-    private float desiredSeparation = 1f;
-    private float neighbourDistance = 2.0f;
+    // private float maxSpeed = 15;
+    // private float maxForce = 0.2f;
+    //private int arriveRadius = 20;
+    
+    // private float desiredSeparation = 1f;
+    // private float neighbourDistance = 2.0f;
 
     private void Awake()
     {
@@ -77,7 +74,7 @@ public class Boid : MonoBehaviour
 
         // Do not touch
         velocity += _acceleration;
-        velocity = Vector2.ClampMagnitude(velocity,maxSpeed);
+        velocity = Vector2.ClampMagnitude(velocity,BoidSettings.maxSpeed);
         LookAt2D(velocity);
         transform.position +=  new Vector3(velocity.x,velocity.y,0) * Time.deltaTime;
         // Do not touch
@@ -94,11 +91,11 @@ public class Boid : MonoBehaviour
         Vector2 wander = Wander();
         Vector2 avoidWalls = AvoidWalls();
         //Weighing Forces
-        sep *= 1.3f;
-        ali *= 1f;
-        coh *= 1.1f;
-        wander *= 0.3f;
-        avoidWalls *= 1.2f;
+        sep *= BoidSettings.separation;
+        ali *= BoidSettings.alignment;
+        coh *= BoidSettings.cohesion;
+        wander *= BoidSettings.wander;
+        avoidWalls *= BoidSettings.avoidWalls;
         //Add Forces to Acceleration
         ApplyForce(sep);
         ApplyForce(ali);
@@ -114,7 +111,7 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist>0 && dist<desiredSeparation)
+            if (dist>0 && dist<BoidSettings.desiredSeparation)
             {
                 Vector2 diff = transform.position - boid.transform.position;
                 diff.Normalize();
@@ -132,9 +129,9 @@ public class Boid : MonoBehaviour
         if (steer.magnitude>0) //Reynolds Steering: steering = desiredVelocity - velocity
         {
             steer.Normalize();
-            steer *= maxSpeed;
+            steer *= BoidSettings.maxSpeed;
             steer -= velocity;
-            steer = Vector2.ClampMagnitude(steer, maxForce);
+            steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
         }
         return steer;
     }
@@ -146,7 +143,7 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist>0 && dist < neighbourDistance)
+            if (dist>0 && dist < BoidSettings.neighbourDistance)
             {
                 sum += boid.velocity;
                 count++;
@@ -157,9 +154,9 @@ public class Boid : MonoBehaviour
         {
             sum /= (float) count;
             sum.Normalize();
-            sum *= maxSpeed;
+            sum *= BoidSettings.maxSpeed;
             Vector2 steer = sum - velocity;
-            steer = Vector2.ClampMagnitude(steer, maxForce);
+            steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
             return steer;
         }
         return Vector2.zero;
@@ -172,7 +169,7 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist > 0 && dist < neighbourDistance)
+            if (dist > 0 && dist < BoidSettings.neighbourDistance)
             {
                 sum += new Vector2(boid.transform.position.x,boid.transform.position.y);
                 count++;
@@ -210,19 +207,19 @@ public class Boid : MonoBehaviour
         float d = desiredVelocity.magnitude;
         desiredVelocity.Normalize();
 
-        if (d < arriveRadius)
+        if (d < BoidSettings.arriveRadius)
         {
-            float m = ExtensionMethods.Map(d, 0, arriveRadius, 0, maxSpeed);
+            float m = ExtensionMethods.Map(d, 0, BoidSettings.arriveRadius, 0, BoidSettings.maxSpeed);
             desiredVelocity *= m;
         }
         else
         {
-            desiredVelocity *= maxSpeed;
+            desiredVelocity *= BoidSettings.maxSpeed;
         }
 
         Vector2 steer = desiredVelocity - velocity;
         
-        steer = Vector2.ClampMagnitude(steer, maxForce);
+        steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
 
         return steer;
     }
@@ -260,32 +257,32 @@ public class Boid : MonoBehaviour
         bool isWall = false;
         if (pos.x >= _screenBounds.x - _objectWidth-boundryOffset)
         {
-            desired = new Vector2(-maxSpeed,velocity.y);
+            desired = new Vector2(-BoidSettings.maxSpeed,velocity.y);
             isWall = true;
         } 
         else if (pos.x <= _screenBounds.x *-1 + _objectWidth +boundryOffset)
         {
-            desired = new Vector2(maxSpeed,velocity.y);  
+            desired = new Vector2(BoidSettings.maxSpeed,velocity.y);  
             isWall = true;
         }
 
         if (pos.y >= _screenBounds.y - _objectHeight-boundryOffset)
         {
-            desired = new Vector2(velocity.x,-maxSpeed);
+            desired = new Vector2(velocity.x,-BoidSettings.maxSpeed);
             isWall = true;
         }
         else if (pos.y <= _screenBounds.y *-1 + _objectHeight+boundryOffset)
         {
-            desired = new Vector2(velocity.x,maxSpeed);
+            desired = new Vector2(velocity.x,BoidSettings.maxSpeed);
             isWall = true;
         }
 
         if (isWall)
         {
             desired.Normalize();
-            desired *= maxSpeed;
+            desired *= BoidSettings.maxSpeed;
             var steer = desired-velocity;
-            steer = Vector2.ClampMagnitude(steer,maxForce);
+            steer = Vector2.ClampMagnitude(steer,BoidSettings.maxForce);
             return steer;
         }
 

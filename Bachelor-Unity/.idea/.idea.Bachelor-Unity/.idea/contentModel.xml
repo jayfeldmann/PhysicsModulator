@@ -6,10 +6,12 @@
     <e p="C:\Users\janlu\Documents\Bachelor-Repo\Bachelor-Unity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BoidPreset.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Boid.cs" t="Include" />
           <e p="BoidArea.cs" t="Include" />
           <e p="BoidAreaTest.cs" t="Include" />
+          <e p="BoidSettings.cs" t="Include" />
           <e p="BoidSpawner.cs" t="Include" />
           <e p="DataHandler.cs" t="Include" />
           <e p="ExtensionMethods.cs" t="Include" />
@@ -30,6 +32,7 @@
           <e p="SaveConfirm.cs" t="Include" />
           <e p="SendController.cs" t="Include" />
           <e p="Serialization" t="Include">
+            <e p="BoidPresetSaveData.cs" t="Include" />
             <e p="GameSettingsSaveData.cs" t="Include" />
             <e p="SaveManager.cs" t="Include" />
           </e>
