@@ -19,21 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Fixed bug for Settings Slider loading.&#10;Improved boid algorithm.">
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SendController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SendController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0bb8aa96244e5d6663d6ddada05efdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c321a18310ad9e82e28c2fdaf3a3138c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e8132d19d71aa36dc900c3659653a474" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fd/fd82d807308d79351c1a8abf27ff4d42" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +93,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Midi/MidiDeviceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/BoidPreset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SendController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +177,7 @@
       <workItem from="1609508886161" duration="7871000" />
       <workItem from="1609955142196" duration="4532000" />
       <workItem from="1609959954589" duration="7091000" />
-      <workItem from="1609967472040" duration="1160000" />
+      <workItem from="1609967472040" duration="1727000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -228,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609967619801</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice.">
+      <created>1609968689885</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609968689885</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +265,8 @@
     <MESSAGE value="Updated some Bugs and added methods for sending Rotation and Velocity as midi." />
     <MESSAGE value="Fixed bug for Settings Slider loading.&#10;Improved boid algorithm." />
     <MESSAGE value="Removed arrive Radius from SeekTarget." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed arrive Radius from SeekTarget." />
+    <MESSAGE value="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice." />
+    <option name="LAST_COMMIT_MESSAGE" value="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">

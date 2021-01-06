@@ -3,7 +3,6 @@ public class BoidPresetSaveData
 {
     public float maxSpeed;
     public float maxForce;
-    public float arriveRadius;
     public float desiredSeparation;
     public float neighbourDistance;
 
@@ -17,7 +16,6 @@ public class BoidPresetSaveData
     {
         maxSpeed = BoidSettings.instance.maxSpeed;
         maxForce = BoidSettings.instance.maxForce;
-        arriveRadius = BoidSettings.instance.arriveRadius;
         desiredSeparation = BoidSettings.instance.desiredSeparation;
         neighbourDistance = BoidSettings.instance.neighbourDistance;
         

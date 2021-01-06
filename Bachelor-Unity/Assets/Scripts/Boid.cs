@@ -443,9 +443,9 @@ public class Boid : MonoBehaviour
     
     private void OnMouseDown()
     {
-        if (!isSelected && !MidiOptions.isActive)
+        if (!isSelected && !BoidOptions.isActive)
         {
-            MidiOptions.sendController = this.sendController;
+            BoidOptions.sendController = this.sendController;
             UIManager.instance.midiOptionsPanel.SetActive(true);
             SelectBoid();
         }

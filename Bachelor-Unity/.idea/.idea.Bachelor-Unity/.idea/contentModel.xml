@@ -11,6 +11,7 @@
           <e p="Boid.cs" t="Include" />
           <e p="BoidArea.cs" t="Include" />
           <e p="BoidAreaTest.cs" t="Include" />
+          <e p="BoidOptions.cs" t="Include" />
           <e p="BoidSettings.cs" t="Include" />
           <e p="BoidSpawner.cs" t="Include" />
           <e p="DataHandler.cs" t="Include" />
@@ -23,7 +24,6 @@
             <e p="MidiHelper.cs" t="Include" />
           </e>
           <e p="MidiHandler.cs" t="Include" />
-          <e p="MidiOptions.cs" t="Include" />
           <e p="NaudioTestScript.cs" t="Include" />
           <e p="OSC" t="Include">
             <e p="OSC.cs" t="Include" />

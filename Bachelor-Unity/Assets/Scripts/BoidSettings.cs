@@ -8,7 +8,6 @@ public class BoidSettings : MonoBehaviour
 {
     public float maxSpeed = 15f;
     public float maxForce = 0.2f;
-    public float arriveRadius = 20;
     public float desiredSeparation = 1f;
     public float neighbourDistance = 4f;
 
@@ -22,7 +21,6 @@ public class BoidSettings : MonoBehaviour
     
     public Slider maxSpeedSlider;
     public Slider maxForceSlider;
-    public Slider arriveRadiusSlider;
     public Slider desiredSeperationSlider;
     public Slider neighbourDistanceSlider;
     
@@ -46,11 +44,8 @@ public class BoidSettings : MonoBehaviour
     public void UpdateMaxForce()
     {
         maxForce = maxForceSlider.value;
-    }
-    public void UpdateArriveRadius()
-    {
-        arriveRadius = arriveRadiusSlider.value;
-    }public void UpdateDesiredSeparation()
+    } 
+    public void UpdateDesiredSeparation()
     {
         desiredSeparation = desiredSeperationSlider.value;
     }
@@ -86,7 +81,6 @@ public class BoidSettings : MonoBehaviour
         maxSpeed = loadedSave.maxSpeed;
         
         maxForce = loadedSave.maxForce;
-        arriveRadius = loadedSave.arriveRadius;
         desiredSeparation = loadedSave.desiredSeparation;
         neighbourDistance = loadedSave.neighbourDistance;
         
@@ -102,7 +96,6 @@ public class BoidSettings : MonoBehaviour
     {
         maxSpeedSlider.value = maxSpeed;
         maxForceSlider.value = maxForce;
-        arriveRadiusSlider.value = arriveRadius;
         desiredSeperationSlider.value = desiredSeparation;
         neighbourDistanceSlider.value = neighbourDistance;
 

@@ -5,9 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MidiOptions : MonoBehaviour
+public class BoidOptions : MonoBehaviour
 {
-    public static MidiOptions instance;
+    public static BoidOptions instance;
 
     public static bool isActive = false;
 

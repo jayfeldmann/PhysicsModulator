@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
     public void EnableDisableSettings()
     {
         
-        if (MidiOptions.isActive)
+        if (BoidOptions.isActive)
         {
             midiOptionsPanel.SetActive(false);
             return;
