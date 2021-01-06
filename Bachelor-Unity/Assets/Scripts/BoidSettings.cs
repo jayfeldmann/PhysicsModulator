@@ -2,8 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
-using Slider = UnityEngine.UI.Slider;
+using UnityEngine.UI;
 
 public class BoidSettings : MonoBehaviour
 {
@@ -63,9 +62,10 @@ public class BoidSettings : MonoBehaviour
         avoidWalls = avoidWallsSlider.value;
     }
 
-    public static void UpdateSettings(BoidPresetSaveData loadedSave)
+    public void UpdateSettings(BoidPresetSaveData loadedSave)
     {
         maxSpeed = loadedSave.maxSpeed;
+        
         maxForce = loadedSave.maxForce;
         arriveRadius = loadedSave.arriveRadius;
         desiredSeparation = loadedSave.desiredSeparation;

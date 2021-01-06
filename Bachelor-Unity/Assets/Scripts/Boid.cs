@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -340,6 +341,26 @@ public class Boid : MonoBehaviour
         return GetYPosAsClampedValue(0, 127);
     }
 
+    public int GetRotationAsMidiValue()
+    {
+        var curAngle = transform.rotation.eulerAngles.z;
+        var midiAngle = Mathf.InverseLerp(0, 360, curAngle);
+        midiAngle *= 127;
+        int returnValue = Mathf.CeilToInt(midiAngle);
+        returnValue = Mathf.Clamp(returnValue, 0, 127);
+        return returnValue;
+    }
+
+    public int GetVelocityAsMidiValue()
+    {
+        var velMagnitude = velocity.magnitude;
+        var midiVel = Mathf.InverseLerp(0, BoidSettings.maxSpeed, velMagnitude);
+        midiVel *= 127;
+        int returnVal = Mathf.CeilToInt(midiVel);
+        returnVal = Mathf.Clamp(returnVal, 0, 127);
+        return returnVal;
+    }
+
     private void SetBoidColor()
     {
         if (!isSelected)
@@ -368,6 +389,14 @@ public class Boid : MonoBehaviour
                 break;
             case "PosY":
                 value = GetYPosAsMidiValue();
+                hasChanged = true;
+                break;
+            case "Rotation":
+                value = GetRotationAsMidiValue();
+                hasChanged = true;
+                break;
+            case "Velocity":
+                value = GetVelocityAsMidiValue();
                 hasChanged = true;
                 break;
             default:
@@ -407,7 +436,7 @@ public class Boid : MonoBehaviour
     
     private void OnMouseDown()
     {
-        if (!isSelected)
+        if (!isSelected && !MidiOptions.isActive)
         {
             MidiOptions.sendController = this.sendController;
             UIManager.instance.midiOptionsPanel.SetActive(true);

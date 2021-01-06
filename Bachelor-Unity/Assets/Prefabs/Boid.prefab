@@ -189,6 +189,8 @@ MonoBehaviour:
   sendModulators:
   - PosX
   - PosY
+  - Rotation
+  - Velocity
   sendModulatorIndex: 0
 --- !u!61 &5582413439674702608
 BoxCollider2D:

@@ -20,7 +20,7 @@ public class Settings : MonoBehaviour
     public static int oscInPort = 1234;
     public static string oscOutIp = "127.0.0.1";
     public static int oscOutPort = 6161;
-    public static SendMode SendMode;
+    public static SendMode SendMode = SendMode.MIDI;
 
     public OSC osc;
 

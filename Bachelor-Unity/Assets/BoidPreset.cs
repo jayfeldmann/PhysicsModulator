@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using TMPro;
-using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class BoidPreset : MonoBehaviour
@@ -47,7 +46,7 @@ public class BoidPreset : MonoBehaviour
             return;
         }
         BoidPresetSaveData loadedSave = SaveManager.Load<BoidPresetSaveData>(loadKey, folderKey);
-        BoidSettings.UpdateSettings(loadedSave);
+        BoidSettings.instance.UpdateSettings(loadedSave);
         BoidSettings.instance.LoadSliders();
     }
 

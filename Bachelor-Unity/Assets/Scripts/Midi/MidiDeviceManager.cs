@@ -60,14 +60,8 @@ public class MidiDeviceManager : MonoBehaviour
         for (int deviceIndex = 0; deviceIndex < MidiOut.NumberOfDevices; deviceIndex++)
         {
             var deviceName = MidiOut.DeviceInfo(deviceIndex).ProductName;
-            if (deviceName.Contains("Microsoft"))
-            {
-                //Skips microsoft internal midi bus because it causes major performance problems
-                continue;
-            }
-            _midiDevices.Add(deviceCount,deviceName);
+            _midiDevices.Add(deviceIndex,deviceName);
             dropdownDevices.Add(deviceName);
-            deviceCount++;
         }
         _midiDeviceDropdown.AddOptions(dropdownDevices);
         SetActiveMidiDevice(0);

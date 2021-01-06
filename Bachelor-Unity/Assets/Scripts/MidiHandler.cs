@@ -14,6 +14,7 @@ public class MidiHandler : DataHandler
         if(!_sendController.isActive) return;
         if (Settings.SendMode == SendMode.MIDI)
         {
+            
             if (SimulationController.sendMidi)
             {
                 SendMidi();
