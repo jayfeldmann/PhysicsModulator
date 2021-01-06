@@ -40,6 +40,7 @@
           <e p="SliderMidiTest.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
+        <e p="SendmodeSwitch.cs" t="Include" />
         <e p="SimulationController.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
