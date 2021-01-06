@@ -235,15 +235,6 @@ public class Boid : MonoBehaviour
         float d = desiredVelocity.magnitude;
         desiredVelocity.Normalize();
         desiredVelocity *= BoidSettings.instance.maxSpeed;
-        //if (d < BoidSettings.instance.arriveRadius)
-        //{
-        //    float m = ExtensionMethods.Map(d, 0, BoidSettings.instance.arriveRadius, 0, BoidSettings.instance.maxSpeed);
-        //    desiredVelocity *= m;
-        //}
-        //else
-        //{
-        //    desiredVelocity *= BoidSettings.instance.maxSpeed;
-        //}
 
         Vector2 steer = desiredVelocity - velocity;
         
