@@ -52,7 +52,7 @@ public class MidiOptions : MonoBehaviour
     }
     private void ShowSettings()
     {
-        var midi = sendController.midiHanler;
+        var midi = sendController.midiHandler;
         _sendChannel.text = midi.midiChannel.ToString();
         _sendCC.text = midi.midiCC.ToString();
         _sendMidiToggle.isOn = sendController.isActive;
@@ -80,7 +80,7 @@ public class MidiOptions : MonoBehaviour
             return;
         }
 
-        var midi = sendController.midiHanler;
+        var midi = sendController.midiHandler;
         midi.midiChannel = channel;
         midi.midiCC = cc;
         

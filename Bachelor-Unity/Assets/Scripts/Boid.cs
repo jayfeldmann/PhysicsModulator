@@ -43,7 +43,7 @@ public class Boid : MonoBehaviour
         _mainCamera = Camera.main;
     }
     
-    private void Update()
+    private void FixedUpdate()
     {
         SetBoidColor();
         if (SimulationController.simulateMovement)
@@ -56,7 +56,7 @@ public class Boid : MonoBehaviour
             {
                 if (sendChannel > 0 && sendCC > 0 && sendChannel <=16)
                 {
-                    HandleMidiValue();    
+                    HandleSendValue();   
                 }   
             }
  
@@ -359,23 +359,23 @@ public class Boid : MonoBehaviour
         return GetYPosAsClampedValue(0, 127);
     }
 
-    public int GetRotationAsMidiValue()
+    public int GetRotationAsClampedValue(int lowerBoarder, int upperBorder)
     {
         var curAngle = transform.rotation.eulerAngles.z;
         var midiAngle = Mathf.InverseLerp(0, 360, curAngle);
-        midiAngle *= 127;
+        midiAngle *= upperBorder;
         int returnValue = Mathf.CeilToInt(midiAngle);
-        returnValue = Mathf.Clamp(returnValue, 0, 127);
+        returnValue = Mathf.Clamp(returnValue, lowerBoarder, upperBorder);
         return returnValue;
     }
 
-    public int GetVelocityAsMidiValue()
+    public int GetVelocityAsClampedValue(int lowerBoarder, int upperBorder)
     {
         var velMagnitude = velocity.magnitude;
         var midiVel = Mathf.InverseLerp(0, BoidSettings.instance.maxSpeed, velMagnitude);
-        midiVel *= 127;
+        midiVel *= upperBorder;
         int returnVal = Mathf.CeilToInt(midiVel);
-        returnVal = Mathf.Clamp(returnVal, 0, 127);
+        returnVal = Mathf.Clamp(returnVal, lowerBoarder, upperBorder);
         return returnVal;
     }
 
@@ -393,63 +393,52 @@ public class Boid : MonoBehaviour
             }
         }
     }
-
-    private void HandleMidiValue()
+    
+    void HandleSendValue()
     {
-        //get last midi value, in order to not JUMP if there is a false value.
-        int value = sendController.midiHanler.midiValue;
+        bool modeIsOsc = Settings.SendMode == SendMode.OSC;
+        int value = modeIsOsc ? sendController.oscHandler.oscValue : sendController.midiHandler.midiValue;
         bool hasChanged = false;
+        var osc = sendController.oscHandler;
+        int lower = modeIsOsc ? osc.oscLowerValue : 0;
+        int upper = modeIsOsc ? osc.oscUpperValue : 127;
+
         switch (sendController.sendModulators[sendController.sendModulatorIndex])
         {
             case "PosX":
-                value = GetXPosAsMidiValue();
+                value = GetYPosAsClampedValue(lower, upper);
                 hasChanged = true;
                 break;
             case "PosY":
-                value = GetYPosAsMidiValue();
+                value = GetXPosAsClampedValue(lower, upper);
                 hasChanged = true;
                 break;
             case "Rotation":
-                value = GetRotationAsMidiValue();
+                value = GetRotationAsClampedValue(lower, upper);
                 hasChanged = true;
                 break;
             case "Velocity":
-                value = GetVelocityAsMidiValue();
+                value = GetVelocityAsClampedValue(lower, upper);
                 hasChanged = true;
                 break;
             default:
-                value = GetXPosAsMidiValue();
+                value = GetXPosAsClampedValue(lower, upper);
                 hasChanged = true;
                 Debug.LogError("Modulator in BOID not found. Please check Sendcontroller Modulators list. Using Default Modulator X Position.");
                 break;
         }
-        if (hasChanged && value>=0) sendController.midiHanler.midiValue = value;
-    }
 
-    private void HandleOscValue()
-    {
-        int value = sendController.oscHandler.oscValue;
-        bool hasChanged = false;
-        var osc = sendController.oscHandler;
-        switch (sendController.sendModulators[sendController.sendModulatorIndex])
+        if (hasChanged)
         {
-            //TODO: Add Upper and Lower border controls. After OSC Panel created.
-            case "PosX":
-                value = GetXPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
-                hasChanged = true;
-                break;
-            case "PosY":
-                value = GetYPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
-                hasChanged = true;
-                break;
-            default:
-                value = GetXPosAsClampedValue(osc.oscLowerValue,osc.oscUpperValue);
-                hasChanged = true;
-                Debug.LogError("Modulator in BOID not found. Please check Sendcontroller Modulators list. Using Default Modulator X Position.");
-                break;
+            if (modeIsOsc)
+            {
+                osc.oscValue = value;
+            }
+            else
+            {
+                sendController.midiHandler.midiValue = value;
+            }
         }
-
-        if (hasChanged) sendController.oscHandler.oscValue = value;
     }
     
     private void OnMouseDown()
