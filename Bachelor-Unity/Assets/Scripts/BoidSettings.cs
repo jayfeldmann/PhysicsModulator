@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class BoidSettings : MonoBehaviour
 {
-    public static float maxSpeed = 15f;
-    public static float maxForce = 0.2f;
-    public static float arriveRadius = 20;
-    public static float desiredSeparation = 1f;
-    public static float neighbourDistance = 2f;
+    public float maxSpeed = 15f;
+    public float maxForce = 0.2f;
+    public float arriveRadius = 20;
+    public float desiredSeparation = 1f;
+    public float neighbourDistance = 4f;
 
-    public static float separation = 1.3f;
-    public static float alignment = 1f;
-    public static float cohesion = 1.1f;
-    public static float wander = 0.3f;
-    public static float avoidWalls = 1.2f;
+    public float separation = 1.3f;
+    public float alignment = 1f;
+    public float cohesion = 1.1f;
+    public float wander = 0.3f;
+    public float avoidWalls = 5;
 
     public static BoidSettings instance;
     
@@ -39,28 +39,47 @@ public class BoidSettings : MonoBehaviour
             instance = this;
         }
     }
-
-    private void OnEnable()
+    public void UpdateMaxSpeed()
     {
-        LoadSliders();
-    }
-
-    public void UpdateSettings()
-    {
-        // Settings
         maxSpeed = maxSpeedSlider.value;
+    }
+    public void UpdateMaxForce()
+    {
         maxForce = maxForceSlider.value;
+    }
+    public void UpdateArriveRadius()
+    {
         arriveRadius = arriveRadiusSlider.value;
+    }public void UpdateDesiredSeparation()
+    {
         desiredSeparation = desiredSeperationSlider.value;
+    }
+    public void UpdateNeighbourDistance()
+    {
         neighbourDistance = neighbourDistanceSlider.value;
-        
-        //Weights
+    }
+    public void UpdateSeparation()
+    {
         separation = separationSlider.value;
+    }
+    
+    public void UpdateAlignment()
+    {
         alignment = alignmentSlider.value;
+    }
+    public void UpdateCohesion()
+    {
         cohesion = cohesionSlider.value;
+    }
+    public void UpdateWander()
+    {
         wander = wanderSlider.value;
+    }
+    public void UpdateAvoidWalls()
+    {
         avoidWalls = avoidWallsSlider.value;
     }
+
 
     public void UpdateSettings(BoidPresetSaveData loadedSave)
     {

@@ -15,16 +15,16 @@ public class BoidPresetSaveData
 
     public BoidPresetSaveData()
     {
-        maxSpeed = BoidSettings.maxSpeed;
-        maxForce = BoidSettings.maxForce;
-        arriveRadius = BoidSettings.arriveRadius;
-        desiredSeparation = BoidSettings.desiredSeparation;
-        neighbourDistance = BoidSettings.neighbourDistance;
+        maxSpeed = BoidSettings.instance.maxSpeed;
+        maxForce = BoidSettings.instance.maxForce;
+        arriveRadius = BoidSettings.instance.arriveRadius;
+        desiredSeparation = BoidSettings.instance.desiredSeparation;
+        neighbourDistance = BoidSettings.instance.neighbourDistance;
         
-        separation = BoidSettings.separation;
-        alignment = BoidSettings.alignment;
-        cohesion = BoidSettings.cohesion;
-        wander = BoidSettings.wander;
-        avoidWalls = BoidSettings.avoidWalls;
+        separation = BoidSettings.instance.separation;
+        alignment = BoidSettings.instance.alignment;
+        cohesion = BoidSettings.instance.cohesion;
+        wander = BoidSettings.instance.wander;
+        avoidWalls = BoidSettings.instance.avoidWalls;
     }
 }

@@ -75,7 +75,7 @@ public class Boid : MonoBehaviour
 
         // Do not touch
         velocity += _acceleration;
-        velocity = Vector2.ClampMagnitude(velocity,BoidSettings.maxSpeed);
+        velocity = Vector2.ClampMagnitude(velocity,BoidSettings.instance.maxSpeed);
         LookAt2D(velocity);
         transform.position +=  new Vector3(velocity.x,velocity.y,0) * Time.deltaTime;
         // Do not touch
@@ -92,17 +92,18 @@ public class Boid : MonoBehaviour
         Vector2 wander = Wander();
         Vector2 avoidWalls = AvoidWalls();
         //Weighing Forces
-        sep *= BoidSettings.separation;
-        ali *= BoidSettings.alignment;
-        coh *= BoidSettings.cohesion;
-        wander *= BoidSettings.wander;
-        avoidWalls *= BoidSettings.avoidWalls;
+        sep *= BoidSettings.instance.separation;
+        ali *= BoidSettings.instance.alignment;
+        coh *= BoidSettings.instance.cohesion;
+        wander *= BoidSettings.instance.wander;
+        avoidWalls *= BoidSettings.instance.avoidWalls;
         //Add Forces to Acceleration
         ApplyForce(sep);
         ApplyForce(ali);
         ApplyForce(coh);
         ApplyForce(wander);
         ApplyForce(avoidWalls);
+        Debug.DrawRay(transform.position,velocity.normalized*5);
     }
 
     Vector2 Separate(List<Boid> boids) //Checking near boids and steers away;
@@ -112,7 +113,7 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist>0 && dist<BoidSettings.desiredSeparation)
+            if (dist>0 && dist<BoidSettings.instance.desiredSeparation)
             {
                 Vector2 diff = transform.position - boid.transform.position;
                 diff.Normalize();
@@ -130,11 +131,31 @@ public class Boid : MonoBehaviour
         if (steer.magnitude>0) //Reynolds Steering: steering = desiredVelocity - velocity
         {
             steer.Normalize();
-            steer *= BoidSettings.maxSpeed;
+            steer *= BoidSettings.instance.maxSpeed;
             steer -= velocity;
-            steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
+            steer = Vector2.ClampMagnitude(steer, BoidSettings.instance.maxForce);
         }
         return steer;
+    }
+
+    bool IsInView(Boid boid)
+    {
+        //return true;
+        float sightDistance = 7f;
+        float periphery = Mathf.PI / 3f;
+        
+        var boidPos = boid.transform.position;
+        var pos = transform.position;
+        Vector2 comparison = boidPos - pos;
+        float d = Vector2.Distance(pos, boidPos);
+        float diff = Vector2.Angle(comparison, velocity);
+        diff *= Mathf.Deg2Rad;
+
+        if (diff < periphery && d > 0 && d < sightDistance)
+        {
+            return true;
+        }
+        return false;
     }
 
     Vector2 Align(List<Boid> boids) //Calc Average velocity for nearby Boids
@@ -144,10 +165,13 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist>0 && dist < BoidSettings.neighbourDistance)
+            if (dist>0 && dist < BoidSettings.instance.neighbourDistance)
             {
-                sum += boid.velocity;
-                count++;
+                if (IsInView(boid))
+                {
+                    sum += boid.velocity;
+                    count++;
+                }
             }
         }
 
@@ -155,9 +179,9 @@ public class Boid : MonoBehaviour
         {
             sum /= (float) count;
             sum.Normalize();
-            sum *= BoidSettings.maxSpeed;
+            sum *= BoidSettings.instance.maxSpeed;
             Vector2 steer = sum - velocity;
-            steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
+            steer = Vector2.ClampMagnitude(steer, BoidSettings.instance.maxForce);
             return steer;
         }
         return Vector2.zero;
@@ -170,10 +194,13 @@ public class Boid : MonoBehaviour
         foreach (var boid in boids)
         {
             float dist = GetBoidDistance(boid);
-            if (dist > 0 && dist < BoidSettings.neighbourDistance)
+            if (dist > 0 && dist < BoidSettings.instance.neighbourDistance)
             {
-                sum += new Vector2(boid.transform.position.x,boid.transform.position.y);
-                count++;
+                if (IsInView(boid))
+                {
+                    sum += new Vector2(boid.transform.position.x,boid.transform.position.y);
+                    count++;
+                }
             }
         }
 
@@ -207,20 +234,20 @@ public class Boid : MonoBehaviour
 
         float d = desiredVelocity.magnitude;
         desiredVelocity.Normalize();
-
-        if (d < BoidSettings.arriveRadius)
-        {
-            float m = ExtensionMethods.Map(d, 0, BoidSettings.arriveRadius, 0, BoidSettings.maxSpeed);
-            desiredVelocity *= m;
-        }
-        else
-        {
-            desiredVelocity *= BoidSettings.maxSpeed;
-        }
+        desiredVelocity *= BoidSettings.instance.maxSpeed;
+        //if (d < BoidSettings.instance.arriveRadius)
+        //{
+        //    float m = ExtensionMethods.Map(d, 0, BoidSettings.instance.arriveRadius, 0, BoidSettings.instance.maxSpeed);
+        //    desiredVelocity *= m;
+        //}
+        //else
+        //{
+        //    desiredVelocity *= BoidSettings.instance.maxSpeed;
+        //}
 
         Vector2 steer = desiredVelocity - velocity;
         
-        steer = Vector2.ClampMagnitude(steer, BoidSettings.maxForce);
+        steer = Vector2.ClampMagnitude(steer, BoidSettings.instance.maxForce);
 
         return steer;
     }
@@ -258,32 +285,32 @@ public class Boid : MonoBehaviour
         bool isWall = false;
         if (pos.x >= _screenBounds.x - _objectWidth-boundryOffset)
         {
-            desired = new Vector2(-BoidSettings.maxSpeed,velocity.y);
+            desired = new Vector2(-BoidSettings.instance.maxSpeed,velocity.y);
             isWall = true;
         } 
         else if (pos.x <= _screenBounds.x *-1 + _objectWidth +boundryOffset)
         {
-            desired = new Vector2(BoidSettings.maxSpeed,velocity.y);  
+            desired = new Vector2(BoidSettings.instance.maxSpeed,velocity.y);  
             isWall = true;
         }
 
         if (pos.y >= _screenBounds.y - _objectHeight-boundryOffset)
         {
-            desired = new Vector2(velocity.x,-BoidSettings.maxSpeed);
+            desired = new Vector2(velocity.x,-BoidSettings.instance.maxSpeed);
             isWall = true;
         }
         else if (pos.y <= _screenBounds.y *-1 + _objectHeight+boundryOffset)
         {
-            desired = new Vector2(velocity.x,BoidSettings.maxSpeed);
+            desired = new Vector2(velocity.x,BoidSettings.instance.maxSpeed);
             isWall = true;
         }
 
         if (isWall)
         {
             desired.Normalize();
-            desired *= BoidSettings.maxSpeed;
+            desired *= BoidSettings.instance.maxSpeed;
             var steer = desired-velocity;
-            steer = Vector2.ClampMagnitude(steer,BoidSettings.maxForce);
+            steer = Vector2.ClampMagnitude(steer,BoidSettings.instance.maxForce);
             return steer;
         }
 
@@ -354,7 +381,7 @@ public class Boid : MonoBehaviour
     public int GetVelocityAsMidiValue()
     {
         var velMagnitude = velocity.magnitude;
-        var midiVel = Mathf.InverseLerp(0, BoidSettings.maxSpeed, velMagnitude);
+        var midiVel = Mathf.InverseLerp(0, BoidSettings.instance.maxSpeed, velMagnitude);
         midiVel *= 127;
         int returnVal = Mathf.CeilToInt(midiVel);
         returnVal = Mathf.Clamp(returnVal, 0, 127);

@@ -36,6 +36,7 @@ public class MidiOptions : MonoBehaviour
             isActive = true;
             ShowSettings();
         }
+        BoidSettings.instance.LoadSliders();
     }
 
     private void OnDisable()
