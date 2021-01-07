@@ -349,16 +349,6 @@ public class Boid : MonoBehaviour
         return returnInt;
     }
 
-    public int GetXPosAsMidiValue()
-    {
-        return GetXPosAsClampedValue(0, 127);
-    }
-
-    public int GetYPosAsMidiValue()
-    {
-        return GetYPosAsClampedValue(0, 127);
-    }
-
     public int GetRotationAsClampedValue(int lowerBoarder, int upperBorder)
     {
         var curAngle = transform.rotation.eulerAngles.z;
