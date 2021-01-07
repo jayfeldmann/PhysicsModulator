@@ -23,14 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,6 @@
         <option value="$PROJECT_DIR$/Assets/LoadSaveSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/DataHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/MidiHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/OscHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" />
         <option value="$PROJECT_DIR$/Assets/Flowfield.cs" />
@@ -97,8 +93,9 @@
         <option value="$PROJECT_DIR$/Assets/SendmodeSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/SimulationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
       </list>
     </option>
   </component>
@@ -182,7 +179,8 @@
       <workItem from="1609959954589" duration="7091000" />
       <workItem from="1609967472040" duration="2518000" />
       <workItem from="1610014534669" duration="1523000" />
-      <workItem from="1610023178860" duration="1553000" />
+      <workItem from="1610023178860" duration="1588000" />
+      <workItem from="1610025527334" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -268,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610016009529</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Midi learn button">
+      <created>1610025154354</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610025154354</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +308,8 @@
     <MESSAGE value="Adde sendmode Dropdown.&#10;Removed SendMidi toggle." />
     <MESSAGE value="Removed GetAsMidi functions." />
     <MESSAGE value="Updated UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UI" />
+    <MESSAGE value="Added Midi learn button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Midi learn button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">
@@ -406,10 +412,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609188727042" />
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610016014095">
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610025163316">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610016014095" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610025163316" />
     <state x="917" y="282" width="3043" height="1674" key="dock-window-1" timestamp="1609509361066">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
@@ -418,10 +424,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="1344" y="529" width="637" height="801" key="find.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609510055445" />
-    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup" timestamp="1609969631717">
+    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup" timestamp="1610025573983">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609969631717" />
+    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610025573983" />
     <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605466472010" />
   </component>
 </project>

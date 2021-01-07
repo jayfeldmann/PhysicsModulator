@@ -12,6 +12,7 @@ public class BoidOptions : MonoBehaviour
     public static bool isActive = false;
 
     public static SendController sendController;
+    private SendMode prevMode;
 
     [SerializeField] private TMP_InputField _sendChannel;
     [SerializeField] private TMP_InputField _sendCC;
@@ -44,6 +45,8 @@ public class BoidOptions : MonoBehaviour
         if (sendController.gameObject)
         {
             isActive = true;
+            prevMode = Settings.SendMode;
+            Settings.SendMode = SendMode.DISABLED;
             ShowSettings();
         }
         BoidSettings.instance.LoadSliders();
@@ -51,6 +54,7 @@ public class BoidOptions : MonoBehaviour
 
     private void OnDisable()
     {
+        Settings.SendMode = prevMode;
         SaveSettings();
         isActive = false;
         sendController.gameObject.GetComponent<Boid>().DeselectBoid();
