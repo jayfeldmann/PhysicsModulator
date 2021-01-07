@@ -29,6 +29,16 @@ public class BoidOptions : MonoBehaviour
         }
     }
 
+    public void SendMidiLearnMessage()
+    {
+        var midi = sendController.midiHandler;
+        if (ValidateMidiValues(ref midi.midiChannel, ref midi.midiCC))
+        {
+            midi.midiValue = 100;
+            midi.SendMidi();
+        }
+    }
+
     private void OnEnable()
     {
         if (sendController.gameObject)
@@ -64,6 +74,25 @@ public class BoidOptions : MonoBehaviour
         _sendModDropdown.ClearOptions();
         _sendModDropdown.AddOptions(sendController.sendModulators);
         _sendModDropdown.value = 0;
+    }
+
+    private bool ValidateMidiValues(ref int channelVal, ref int ccVal)
+    {
+        int channel;
+        int cc;
+        if (!Int32.TryParse(_sendChannel.text,out channel))
+        {
+            return false;
+        }
+
+        if (!Int32.TryParse(_sendCC.text,out cc))
+        {
+            return false;
+        }
+
+        channelVal = channel;
+        ccVal = cc;
+        return true;
     }
 
     private void SaveSettings()

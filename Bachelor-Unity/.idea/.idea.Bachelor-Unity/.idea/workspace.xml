@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Adde sendmode Dropdown.&#10;Removed SendMidi toggle.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c68bcb682661012b3661d2d9f18affa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6f/6f52a9aa033f85e17d9348fdb75b6464" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ed/ed177c5dc623bb13aa09c2601a1a330e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
@@ -48,7 +47,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Midi/MidiHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/janlu/Documents/Bachelor-Repo/Bachelor-Unity/Assets/Scripts/Boid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/525DC68F-BE66-40F4-83D9-939A51075A29/aa/3ae8f233/Regex.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
@@ -94,13 +92,13 @@
         <option value="$PROJECT_DIR$/Assets/BoidPreset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SendController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/SendmodeSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/SimulationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +118,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.69014084" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
@@ -152,6 +150,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\janlu\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="" />
@@ -180,7 +181,8 @@
       <workItem from="1609955142196" duration="4532000" />
       <workItem from="1609959954589" duration="7091000" />
       <workItem from="1609967472040" duration="2518000" />
-      <workItem from="1610014534669" duration="1174000" />
+      <workItem from="1610014534669" duration="1523000" />
+      <workItem from="1610023178860" duration="1553000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -259,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610014580322</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated UI">
+      <created>1610016009529</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610016009529</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +302,8 @@
     <MESSAGE value="Removed ArriveDistance slider" />
     <MESSAGE value="Adde sendmode Dropdown.&#10;Removed SendMidi toggle." />
     <MESSAGE value="Removed GetAsMidi functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed GetAsMidi functions." />
+    <MESSAGE value="Updated UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">
@@ -384,18 +394,22 @@
     </state>
     <state width="3029" height="245" key="GridCell.Tab.3.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
     <state width="2068" height="264" key="GridCell.Tab.3.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
-    <state x="760" y="421" key="SettingsEditor" timestamp="1609967582153">
+    <state x="1011" y="554" key="LayersDialog" timestamp="1610016086112">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="760" y="421" key="SettingsEditor/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967582153" />
+    <state x="1011" y="554" key="LayersDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610016086112" />
+    <state x="760" y="421" key="SettingsEditor" timestamp="1610016084492">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="760" y="421" key="SettingsEditor/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610016084492" />
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog" timestamp="1609188727042">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609188727042" />
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1609969976131">
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610016014095">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609969976131" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610016014095" />
     <state x="917" y="282" width="3043" height="1674" key="dock-window-1" timestamp="1609509361066">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>

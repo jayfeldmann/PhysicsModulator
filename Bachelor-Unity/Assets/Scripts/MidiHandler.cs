@@ -9,7 +9,7 @@ public class MidiHandler : DataHandler
     public int sendMessage => MidiMessage.ChangeControl(midiCC, midiValue, midiChannel).RawData;
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(!_sendController.isActive) return;
         if (Settings.SendMode == SendMode.MIDI)
@@ -18,7 +18,7 @@ public class MidiHandler : DataHandler
         }
     }
     
-    private void SendMidi()
+    public void SendMidi()
     {
         var activeDevice = MidiDeviceManager.activeMidiDevice;
         if (activeDevice >=0)
