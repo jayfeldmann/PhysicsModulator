@@ -39,6 +39,7 @@
           <e p="Settings.cs" t="Include" />
           <e p="SliderMidiTest.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
+          <e p="ValuePrinter.cs" t="Include" />
         </e>
         <e p="SendmodeSwitch.cs" t="Include" />
         <e p="SimulationController.cs" t="Include" />
