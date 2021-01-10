@@ -8,8 +8,7 @@ s = 1 + np.sin(2 * np.pi * t) * 127
 fig, ax = plt.subplots()
 ax.plot(t, s)
 
-ax.set(xlabel='time (s)', ylabel='midi value',
-       title='Zeitverlauf Boid-X Positionen')
+ax.set(xlabel='time (s)', ylabel='midi value')
 ax.grid()
 
 #fig.savefig("test.png")
