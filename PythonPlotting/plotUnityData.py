@@ -1,18 +1,32 @@
-import matplotlib
+import matplotlib, json
 import matplotlib.pyplot as plt
 import numpy as np
 
-t = np.arange(0.0, 1.0, 0.01)
-s = 1 + np.sin(2 * np.pi * t) * 127
+def PlotGraph(duration, step, dataValues):
+    t = np.arange(0.0,duration,step)
+    
+    fig, ax = plt.subplots()
+    ax.plot(t,dataValues)
 
-fig, ax = plt.subplots()
-ax.plot(t, s)
+    ax.set(xlabel='time (s)', ylabel='midi value')
+    ax.grid()
 
-ax.set(xlabel='time (s)', ylabel='midi value')
-ax.grid()
-
-#fig.savefig("test.png")
-plt.show()
+    plt.show()
 
 def ReadUnityData(dataFilePath):
-    pass
+    jsonData = GetJsonData(dataFilePath)
+    duration = float(jsonData["readDuration"])
+    frequenzy = int(jsonData["readFrequenzy"])
+    timeStep = float(1/frequenzy);
+    values = np.array(jsonData["values"])
+    PlotGraph(duration,timeStep,values)
+
+def GetJsonData(dataFilePath):
+    with open(dataFilePath,'r') as jsonFile:
+        jsonData = json.load(jsonFile)
+        return jsonData
+
+def main():
+    ReadUnityData('testValXPos.json')
+
+main()
