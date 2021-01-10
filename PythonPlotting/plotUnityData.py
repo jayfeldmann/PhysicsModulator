@@ -16,8 +16,8 @@ def PlotGraph(duration, step, dataValues):
 def ReadUnityData(dataFilePath):
     jsonData = GetJsonData(dataFilePath)
     duration = float(jsonData["readDuration"])
-    frequenzy = int(jsonData["readFrequenzy"])
-    timeStep = float(1/frequenzy);
+    frequency = int(jsonData["readFrequency"])
+    timeStep = float(1/frequency);
     values = np.array(jsonData["values"])
     PlotGraph(duration,timeStep,values)
 
