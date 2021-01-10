@@ -35,6 +35,7 @@ def GetJsonData(dataFilePath):
 
 # Programm Einstiegspunkt
 def main():
-    ReadUnityData('20testX.json')
+    jsonPath = input("JSON File Path: ")
+    ReadUnityData(jsonPath)
 
 main()
