@@ -22,8 +22,8 @@ public class ValuePrinter : MonoBehaviour
     private bool printValues = false;
     private int valueCount = 0;
 
-    private int durationValueCount => (int)readFrequenzy * readDuration;
-    private int readFrequenzy => (int) (1 / Time.fixedDeltaTime); // 50Hz durch projectsettings
+    private int durationValueCount => (int)readFrequency * readDuration;
+    private int readFrequency => (int) (1 / Time.fixedDeltaTime); // 50Hz durch projectsettings
 
     //die zu speichernde Datenliste
     private List<int> midiValueList;
@@ -59,7 +59,7 @@ public class ValuePrinter : MonoBehaviour
     //Speichert die gesammelten Daten als json Datei im Ordner "valuereadings"
     public void SaveMidiValues()
     {
-        var valueData = new MidiValueData(midiValueList.ToArray(), readDuration, readFrequenzy);
+        var valueData = new MidiValueData(midiValueList.ToArray(), readDuration, readFrequency);
         SaveManager.Save(valueData,saveKey,"valuereadings");
     }
 
@@ -84,14 +84,14 @@ public class ValuePrinter : MonoBehaviour
     public class MidiValueData
     {    
         public int readDuration;
-        public int readFrequenzy;
+        public int readFrequency;
         public int[] values;
     
         public MidiValueData(int[] _values, int _duration, int _freq)
         {
             values = _values;
             readDuration = _duration;
-            readFrequenzy = _freq;
+            readFrequency = _freq;
         }
     }
 }
