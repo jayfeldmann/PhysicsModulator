@@ -22,7 +22,7 @@ public class ValuePrinter : MonoBehaviour
     private bool printValues = false;
     private int valueCount = 0;
 
-    private int durationValueCount => (int)durationValueCount * readDuration;
+    private int durationValueCount => (int)readFrequenzy * readDuration;
     private int readFrequenzy => (int) (1 / Time.fixedDeltaTime); // 50Hz durch projectsettings
 
     //die zu speichernde Datenliste
