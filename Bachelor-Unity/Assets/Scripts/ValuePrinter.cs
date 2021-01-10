@@ -39,7 +39,7 @@ public class ValuePrinter : MonoBehaviour
         {
             midiValueList.Add(GetCurrentMidiValue());
             valueCount++;
-            if (valueCount > durationValueCount)
+            if (valueCount >= durationValueCount)
             {
                 SaveMidiValues();
                 ResetReading();
