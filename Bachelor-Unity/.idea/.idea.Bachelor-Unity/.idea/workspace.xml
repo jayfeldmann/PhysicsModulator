@@ -20,7 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Adde sendmode Dropdown.&#10;Removed SendMidi toggle.">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ValuePrinter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ValuePrinter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Boid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/0408a922c34e430aa9c223284e73c0b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/05/05e5afe98d7e3d84566268195719dc8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/952b52cb9ddfc18492b2712f3cb52b17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/fb/fb0df97406740f3cf36d3a1e382a78fa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PythonPlotting/plotUnityData.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PythonPlotting/plotUnityData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PythonPlotting/test.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +54,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Midi/MidiHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/janlu/Documents/Bachelor-Repo/Bachelor-Unity/Assets/Scripts/ValuePrinter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/525DC68F-BE66-40F4-83D9-939A51075A29/aa/3ae8f233/Regex.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,6 +65,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SendmodeSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/janlu/Documents/Bachelor-Repo/Bachelor-Unity/Assets/Scripts/ValuePrinter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/GameSettingsSaveData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -84,10 +104,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/SendmodeSwitch.cs" />
         <option value="$PROJECT_DIR$/Assets/SimulationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ValuePrinter.cs" />
       </list>
     </option>
@@ -174,7 +194,8 @@
       <workItem from="1610014534669" duration="1523000" />
       <workItem from="1610023178860" duration="1588000" />
       <workItem from="1610025527334" duration="259000" />
-      <workItem from="1610283547169" duration="2498000" />
+      <workItem from="1610283547169" duration="2678000" />
+      <workItem from="1610288938156" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -295,7 +316,28 @@
       <option name="project" value="LOCAL" />
       <updated>1610285799929</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Custom Inspector with Button for StartValueRead() to ValuePrinter.">
+      <created>1610286150200</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610286150200</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed endless recursion loop in durationValueCount property.">
+      <created>1610289410708</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289410708</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated value printing in order to correctly plot with python script.">
+      <created>1610290933288</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610290933288</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +377,10 @@
     <MESSAGE value="Added ValuePRinter class" />
     <MESSAGE value="Value printer class is able to save json value list with MidiValueData as data class." />
     <MESSAGE value="Added Comments to ValuePrinter and read duration/ read frequenzy to save file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Comments to ValuePrinter and read duration/ read frequenzy to save file." />
+    <MESSAGE value="Added Custom Inspector with Button for StartValueRead() to ValuePrinter." />
+    <MESSAGE value="Fixed endless recursion loop in durationValueCount property." />
+    <MESSAGE value="updated value printing in order to correctly plot with python script." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated value printing in order to correctly plot with python script." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">
@@ -438,10 +483,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609188727042" />
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610025773906">
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610286155168">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
-    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610025773906" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610286155168" />
     <state x="917" y="282" width="3043" height="1674" key="dock-window-1" timestamp="1609509361066">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>

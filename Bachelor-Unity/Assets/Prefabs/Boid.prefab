@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 1291169254183413806}
   - component: {fileID: 8232290532785997772}
   - component: {fileID: 5582413439674702608}
+  - component: {fileID: 6391863902414591382}
   m_Layer: 0
   m_Name: Boid
   m_TagString: Untagged
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   oscHandler: {fileID: 1291169254183413806}
-  midiHanler: {fileID: 7937106830423026984}
+  midiHandler: {fileID: 7937106830423026984}
   sendModulators:
   - PosX
   - PosY
@@ -218,3 +219,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.68, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &6391863902414591382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8503276907705927906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405b844d77b51814682364316a10198f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  midiHandler: {fileID: 7937106830423026984}
+  saveKey: 
+  readDuration: 10

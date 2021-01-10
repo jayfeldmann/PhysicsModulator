@@ -27,6 +27,6 @@ def GetJsonData(dataFilePath):
         return jsonData
 
 def main():
-    ReadUnityData('testValXPos.json')
+    ReadUnityData('20testX.json')
 
 main()

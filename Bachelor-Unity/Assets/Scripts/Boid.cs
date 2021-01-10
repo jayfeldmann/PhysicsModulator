@@ -31,19 +31,13 @@ public class Boid : MonoBehaviour
     [HideInInspector]
     public Vector2 velocity = new Vector2(0,0);
     private Vector2 _acceleration = new Vector2(0,0);
-    // private float maxSpeed = 15;
-    // private float maxForce = 0.2f;
-    //private int arriveRadius = 20;
-    
-    // private float desiredSeparation = 1f;
-    // private float neighbourDistance = 2.0f;
 
     private void Awake()
     {
         _mainCamera = Camera.main;
     }
     
-    private void FixedUpdate()
+    private void Update()
     {
         SetBoidColor();
         if (SimulationController.simulateMovement)
