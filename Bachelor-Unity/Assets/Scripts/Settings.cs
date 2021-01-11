@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 
 //SendMode enum um SendHandler zu aktivieren bzw deaktivieren.
 public enum SendMode
