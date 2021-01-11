@@ -22,16 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Adde sendmode Dropdown.&#10;Removed SendMidi toggle.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bachelor-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BoidPreset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BoidPreset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SendController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SendController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-    </list>
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Adde sendmode Dropdown.&#10;Removed SendMidi toggle." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,9 +86,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SendController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/BoidPreset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       </list>
@@ -188,7 +179,7 @@
       <workItem from="1610283547169" duration="2678000" />
       <workItem from="1610288938156" duration="1389000" />
       <workItem from="1610294866646" duration="93000" />
-      <workItem from="1610376296841" duration="6036000" />
+      <workItem from="1610376296841" duration="6244000" />
     </task>
     <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
       <created>1606835386297</created>
@@ -358,7 +349,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610386002721</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="More Comments.">
+      <created>1610386766213</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386766213</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Optimized Imports.">
+      <created>1610386897765</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386897765</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +386,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Data/Midi/Osc Handlers." />
     <MESSAGE value="Changed Boid panel to be more General Purpose. Changed to MIDI Panel." />
     <MESSAGE value="Added Flocking Behaviour" />
     <MESSAGE value="Updated Flocking behaviour." />
@@ -405,7 +409,9 @@
     <MESSAGE value="Moved ValuePrinter inspector class to Editor folder." />
     <MESSAGE value="Fixed Options Dropdown bug where wrong index was loaded." />
     <MESSAGE value="Commented Boid, BOptions and Midihandler. A little Cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commented Boid, BOptions and Midihandler. A little Cleanup." />
+    <MESSAGE value="More Comments." />
+    <MESSAGE value="Optimized Imports." />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized Imports." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">
@@ -512,6 +518,10 @@
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
     <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610286155168" />
+    <state x="1354" y="758" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610386862349">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1354" y="758" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610386862349" />
     <state x="917" y="282" width="3043" height="1674" key="dock-window-1" timestamp="1609509361066">
       <screen x="0" y="0" width="3072" height="1688" />
     </state>
