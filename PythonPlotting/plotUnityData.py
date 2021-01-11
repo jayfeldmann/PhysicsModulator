@@ -9,13 +9,10 @@ import numpy as np
 # Funktion um aus den vorbereiteten Daten einen Graphen zu generieren und anzuzeigen.
 def PlotGraph(duration, step, dataValues):
     t = np.arange(0.0,duration,step)
-    
-    fig, ax = plt.subplots()
+    ax = plt.subplots()
     ax.plot(t,dataValues)
-
     ax.set(xlabel='time (s)', ylabel='midi value')
     ax.grid()
-
     plt.show()
 
 # Funktion um JSON Daten auszulesen und für die Generation vorzubereiten.
