@@ -6,13 +6,20 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Definiert wie BoidSetting Presets gespeichert und Geladen werden.
+/// </summary>
 public class BoidPreset : MonoBehaviour
 {
+    //UI Referenzen
     public TMP_Dropdown presetDropdown;
     public TMP_InputField presetNameInputField;
     public TMP_Text errorText;
 
+    //Regular Expression von hier: https://stackoverflow.com/questions/11794144/regular-expression-for-valid-filename
+    //Definiert RegEx für validen Dateinamen um auf Betriebssystemen verbotene Zeichen auszuschließen.
     private string fileNameRegx = @"^[\w\-. ]+$";
+    //Ordnername, in dem die Presets gespeichert werden.
     private string folderKey = "boidpresets";
 
     private void OnEnable()
@@ -20,6 +27,7 @@ public class BoidPreset : MonoBehaviour
         FillPresetDropdown();
     }
 
+    //Speichert aktuelle BoidSettings als JSON Datei im folderKey Ordner.
     public void SavePreset()
     {
         var saveKey = presetNameInputField.text;
@@ -37,6 +45,7 @@ public class BoidPreset : MonoBehaviour
         FillPresetDropdown();
     }
 
+    //Lädt ein bestimmtes Preset anhand einer Auswahl im UI Dropdown
     public void LoadPreset()
     {
         var loadKey = presetDropdown.captionText.text;
@@ -50,6 +59,7 @@ public class BoidPreset : MonoBehaviour
         BoidSettings.instance.LoadSliders();
     }
 
+    //Lädt aktuell gespeicherte Presets in ein Dropdownmenü
     public void FillPresetDropdown()
     {
         presetDropdown.ClearOptions();

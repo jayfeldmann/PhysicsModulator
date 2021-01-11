@@ -1,17 +1,22 @@
-﻿
+﻿/// <summary>
+/// Definiert die Presetdatei für BoidPresets.
+/// </summary>
 public class BoidPresetSaveData
 {
+    //Simulationsparameter
     public float maxSpeed;
     public float maxForce;
     public float desiredSeparation;
     public float neighbourDistance;
 
+    //Gewichtungen
     public float separation;
     public float alignment;
     public float cohesion;
     public float wander;
     public float avoidWalls;
 
+    //Konstruktor zwingt ein Zuweisen von Werten um keine Null-Werte zu haben.
     public BoidPresetSaveData()
     {
         maxSpeed = BoidSettings.instance.maxSpeed;

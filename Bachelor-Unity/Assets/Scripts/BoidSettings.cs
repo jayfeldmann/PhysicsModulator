@@ -4,19 +4,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// BoidSettings definieren die Globalen eigenschaften der Boidsimulation wie Geschwindigkeit, Distanz zu Nachbarn oder die Geichtungen der Verhaltensregeln.
+/// </summary>
 public class BoidSettings : MonoBehaviour
 {
+    //Simulationsparameter
     public float maxSpeed = 15f;
     public float maxForce = 0.2f;
     public float desiredSeparation = 1f;
     public float neighbourDistance = 4f;
 
+    //Gewichtungen der Regeln
     public float separation = 1.3f;
     public float alignment = 1f;
     public float cohesion = 1.1f;
     public float wander = 0.3f;
     public float avoidWalls = 5;
 
+    
+    //UI Referenzen
     public static BoidSettings instance;
     
     public Slider maxSpeedSlider;
@@ -29,7 +36,25 @@ public class BoidSettings : MonoBehaviour
     public Slider cohesionSlider;
     public Slider wanderSlider;
     public Slider avoidWallsSlider;
-
+    
+    //Lädt Settings anhand eines Objekts genriert durch JSON Daten,.
+    public void UpdateSettings(BoidPresetSaveData loadedSave)
+    {
+        maxSpeed = loadedSave.maxSpeed;
+        
+        maxForce = loadedSave.maxForce;
+        desiredSeparation = loadedSave.desiredSeparation;
+        neighbourDistance = loadedSave.neighbourDistance;
+        
+        //Weights
+        separation = loadedSave.separation;
+        alignment = loadedSave.alignment;
+        cohesion = loadedSave.cohesion;
+        wander = loadedSave.wander;
+        avoidWalls = loadedSave.avoidWalls;
+    }
+    
+    //Alle funktionen dienen nur zur Integration in das UI
     private void Awake()
     {
         if (!instance)
@@ -76,21 +101,6 @@ public class BoidSettings : MonoBehaviour
     }
 
 
-    public void UpdateSettings(BoidPresetSaveData loadedSave)
-    {
-        maxSpeed = loadedSave.maxSpeed;
-        
-        maxForce = loadedSave.maxForce;
-        desiredSeparation = loadedSave.desiredSeparation;
-        neighbourDistance = loadedSave.neighbourDistance;
-        
-        //Weights
-        separation = loadedSave.separation;
-        alignment = loadedSave.alignment;
-        cohesion = loadedSave.cohesion;
-        wander = loadedSave.wander;
-        avoidWalls = loadedSave.avoidWalls;
-    }
 
     public void LoadSliders()
     {

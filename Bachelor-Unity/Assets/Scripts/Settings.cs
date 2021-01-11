@@ -4,15 +4,19 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+//SendMode enum um SendHandler zu aktivieren bzw deaktivieren.
 public enum SendMode
 {
     MIDI,
     OSC,
     DISABLED
 }
-
+/// <summary>
+/// Globale Einstgellungen wie Midi-Device oder allgemeine Programmeinstellungen.
+/// </summary>
 public class Settings : MonoBehaviour
 {
+    //Einstellungsvariablen. Werden als JSON gespeicehrt.
     public static bool isActive = false;
 
     public static Settings instance;

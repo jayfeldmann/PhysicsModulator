@@ -5,8 +5,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// UI Manager dient als Zentrum um das UI steuern zu können.
+/// </summary>
 public class UIManager : MonoBehaviour
 {
+    //Referenzen zu UI Elementen.
     public static UIManager instance;
 
     public GameObject settingsPanel;
@@ -24,6 +28,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    //Öffnet Einstellungen bei ESC Taste.
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -33,6 +38,7 @@ public class UIManager : MonoBehaviour
     }
 
 
+    //Öffnet oder Schließt Einstellungsfenster.
     public void EnableDisableSettings()
     {
         
