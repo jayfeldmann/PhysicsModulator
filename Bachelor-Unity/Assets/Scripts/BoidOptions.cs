@@ -1,19 +1,26 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// Diese Klasse verwaltet die Darstellung und Verarbeitung des Einstellungsmenüs und die Daten für die Simulation der Boids.
+/// Auch wird durch das UI ermöglicht, diese zu ändern.
+/// Zusätzlich zu den Simulationseinstellungen können auch Midi/OSC Einstellungen vorgenommen werden. 
+/// </summary>
 public class BoidOptions : MonoBehaviour
 {
+    //Hilfsvariablen
     public static BoidOptions instance;
 
     public static bool isActive = false;
 
+    //Referenz zum aktuell ausgewählten Boid.
     public static SendController sendController;
     private SendMode prevMode;
 
+    //Referenzen zum UI
     [SerializeField] private TMP_InputField _sendChannel;
     [SerializeField] private TMP_InputField _sendCC;
     [SerializeField] private TMP_Dropdown _sendModDropdown;
@@ -30,6 +37,7 @@ public class BoidOptions : MonoBehaviour
         }
     }
 
+    //Sendet einzelne Midi Nachricht um Midi-Learn funktionen von zB Ableton Live verwenden zu können.
     public void SendMidiLearnMessage()
     {
         var midi = sendController.midiHandler;
@@ -40,6 +48,7 @@ public class BoidOptions : MonoBehaviour
         }
     }
 
+    //Laden  UI
     private void OnEnable()
     {
         if (sendController.gameObject)
@@ -51,7 +60,7 @@ public class BoidOptions : MonoBehaviour
         }
         BoidSettings.instance.LoadSliders();
     }
-
+    //Entladen UI
     private void OnDisable()
     {
         Settings.SendMode = prevMode;
@@ -64,6 +73,8 @@ public class BoidOptions : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    
+    //Laden UI
     private void ShowSettings()
     {
         var midi = sendController.midiHandler;
@@ -80,6 +91,7 @@ public class BoidOptions : MonoBehaviour
         _sendModDropdown.value = sendController.sendModulatorIndex;
     }
 
+    //überprüft, ob die eingegebenen Werte valide sind und für Midi Nachrichten verwendet werden können.
     private bool ValidateMidiValues(ref int channelVal, ref int ccVal)
     {
         int channel;
@@ -99,6 +111,7 @@ public class BoidOptions : MonoBehaviour
         return true;
     }
 
+    //überprüft Einstellungen und speichert diese
     private void SaveSettings()
     {
         int channel;
@@ -121,6 +134,7 @@ public class BoidOptions : MonoBehaviour
         sendController.isActive = _sendMidiToggle.isOn;
     }
 
+    //Event zum speichern
     public void OnSendMidiToggle()
     {
         SaveSettings();
