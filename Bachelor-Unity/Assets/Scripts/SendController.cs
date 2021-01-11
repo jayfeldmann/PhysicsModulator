@@ -13,5 +13,5 @@ public class SendController : MonoBehaviour
     [FormerlySerializedAs("midiHanler")] public MidiHandler midiHandler;
 
     public List<string> sendModulators;
-    public int sendModulatorIndex;
+    public int sendModulatorIndex = 0;
 }

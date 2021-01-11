@@ -77,7 +77,7 @@ public class BoidOptions : MonoBehaviour
     {
         _sendModDropdown.ClearOptions();
         _sendModDropdown.AddOptions(sendController.sendModulators);
-        _sendModDropdown.value = 0;
+        _sendModDropdown.value = sendController.sendModulatorIndex;
     }
 
     private bool ValidateMidiValues(ref int channelVal, ref int ccVal)

@@ -4,21 +4,23 @@ ScriptsOnlyBuild:
     - Boid
     - BoidArea
     - BoidAreaTest
+    - BoidOptions
     - BoidPreset
     - BoidSettings
     - BoidSpawner
     - LoadSaveSettings
     - MidiDeviceManager
     - MidiHandler
-    - MidiOptions
     - NaudioTestScript
     - OSC
     - OscHandler
     - SaveManager
     - SendController
+    - SendmodeSwitch
     - Settings
     - SimulationController
     - UIManager
+    - ValuePrinter
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -65,7 +67,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -97,89 +99,93 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11748}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 11768}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 11830}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 11888}
     - Class: 114
-      Script: {instanceID: 12114}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12140}
+      Script: {instanceID: 12142}
     - Class: 114
-      Script: {instanceID: 12148}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12272}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12440}
+      Script: {instanceID: 12442}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12462}
     - Class: 114
-      Script: {instanceID: 12630}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12820}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 12912}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 13050}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 13066}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13130}
     - Class: 114
-      Script: {instanceID: 13134}
+      Script: {instanceID: 13136}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13298}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 13552}
     - Class: 114
-      Script: {instanceID: 13822}
+      Script: {instanceID: 13824}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13952}
     - Class: 114
-      Script: {instanceID: 14032}
+      Script: {instanceID: 14034}
     - Class: 114
-      Script: {instanceID: 14188}
+      Script: {instanceID: 14190}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 14228}
     - Class: 114
-      Script: {instanceID: 14274}
+      Script: {instanceID: 14276}
     - Class: 114
-      Script: {instanceID: 14476}
+      Script: {instanceID: 14282}
     - Class: 114
-      Script: {instanceID: 14500}
+      Script: {instanceID: 14480}
     - Class: 114
-      Script: {instanceID: 14772}
+      Script: {instanceID: 14504}
     - Class: 114
-      Script: {instanceID: 14836}
+      Script: {instanceID: 14776}
     - Class: 114
-      Script: {instanceID: 14888}
+      Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 14894}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 15016}
+      Script: {instanceID: 14898}
     - Class: 114
-      Script: {instanceID: 15362}
+      Script: {instanceID: 15020}
     - Class: 114
-      Script: {instanceID: 15420}
+      Script: {instanceID: 15254}
     - Class: 114
-      Script: {instanceID: 15564}
+      Script: {instanceID: 15368}
     - Class: 114
-      Script: {instanceID: 15800}
+      Script: {instanceID: 15426}
     - Class: 114
-      Script: {instanceID: 15830}
+      Script: {instanceID: 15570}
     - Class: 114
-      Script: {instanceID: 15840}
+      Script: {instanceID: 15806}
+    - Class: 114
+      Script: {instanceID: 15836}
+    - Class: 114
+      Script: {instanceID: 15846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -519,7 +525,7 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
-      Hash: 74f66c731ebf35154d740a8ecbd0d084
+      Hash: 40eff099d972ac96a627670a2195c24f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BoidSettings
@@ -555,7 +561,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   - hash:
       serializedVersion: 2
-      Hash: f2dba1f45006f3fa43f790c7c6d90136
+      Hash: 7d71bd81f91e0bad7e2ad227458bfa0f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SendController
@@ -780,7 +786,7 @@ ScriptsOnlyBuild:
       Hash: d0f1c07d7523d8147f9a67d864a77192
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MidiOptions
+    className: BoidOptions
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -793,6 +799,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem
     className: InputActionAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9dfcecc60d8ea09805f477a838dc94e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SendmodeSwitch
   - hash:
       serializedVersion: 2
       Hash: 285f5d7c369d870b93f4a2cbcec118e4
@@ -1017,6 +1029,12 @@ ScriptsOnlyBuild:
     className: VertexColorCycler
   - hash:
       serializedVersion: 2
+      Hash: 9f037f34ddf68a31b4a43868f66cf71b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ValuePrinter
+  - hash:
+      serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -1191,5 +1209,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/MainScene.unity
   playerPath: C:/Users/janlu/Documents/Bachelor-Repo/Bachelor-Unity/Builds/PhysicsModulator.exe
