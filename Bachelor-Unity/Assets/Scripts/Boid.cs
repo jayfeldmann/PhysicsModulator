@@ -285,6 +285,8 @@ public class Boid : MonoBehaviour
     }
 
     //Nach Shiffman. Lenkt boids von Bildschirmrändern weg.
+    //Die Brechnungen der Boidgröße und der Positionen der Bildschirmränder basieren auf diesem Blogeintrag:
+    //https://pressstart.vip/tutorials/2018/06/28/41/keep-object-in-bounds.html
     private Vector2 AvoidWalls()
     {
         var pos = transform.position;
