@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="Adde sendmode Dropdown.&#10;Removed SendMidi toggle.">
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="80eac630-f24a-4a84-8cb5-c963c5f2230c" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Midi/MidiHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/525DC68F-BE66-40F4-83D9-939A51075A29/aa/3ae8f233/Regex.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Settings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Midi/MidiDeviceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/janlu/Documents/Bachelor-Repo/Bachelor-Unity/Assets/Scripts/Boid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BoidPreset.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/41/d71b8645/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SendmodeSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/6e/c57a44e7/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Serialization/GameSettingsSaveData.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Midi/MidiHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NaudioTestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/SliderMidiTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoidArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoidAreaTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidAreaTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoidOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoidSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSC.cs" />
+        <option value="$PROJECT_DIR$/Assets/LoadSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/SaveConfirm.cs" />
+        <option value="$PROJECT_DIR$/Assets/LoadSaveSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/DataHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/OscHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" />
+        <option value="$PROJECT_DIR$/Assets/Flowfield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/SendController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/GameSettingsSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Midi/MidiDeviceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/SendmodeSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/SimulationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ValuePrinter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/ValuePrinterEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidOptions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SendController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/BoidPresetSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoidPreset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Settings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Boid.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k42nEwU40W2kI60ZIdnDfVcPau" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.29941127" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.25735912" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.69014084" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\PhysicsModulator.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\janlu\Documents\Bachelor-Repo\Bachelor-Unity\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\janlu\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e7209fd-61db-4c51-906f-a6ad8fb3e3b8" name="Default Changelist" comment="" />
+      <created>1604945712048</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604945712048</updated>
+      <workItem from="1604945729339" duration="4268000" />
+      <workItem from="1605006440362" duration="6180000" />
+      <workItem from="1605040098881" duration="106000" />
+      <workItem from="1605094217459" duration="4803000" />
+      <workItem from="1605457832736" duration="9932000" />
+      <workItem from="1606674995964" duration="5364000" />
+      <workItem from="1606832772571" duration="4368000" />
+      <workItem from="1606907709271" duration="6853000" />
+      <workItem from="1607005455501" duration="5677000" />
+      <workItem from="1607445375303" duration="6679000" />
+      <workItem from="1607452415482" duration="1711000" />
+      <workItem from="1607793663387" duration="5650000" />
+      <workItem from="1607874726340" duration="3944000" />
+      <workItem from="1608048780057" duration="3537000" />
+      <workItem from="1609187873389" duration="2037000" />
+      <workItem from="1609241995808" duration="4169000" />
+      <workItem from="1609271603598" duration="688000" />
+      <workItem from="1609508886161" duration="7871000" />
+      <workItem from="1609955142196" duration="4532000" />
+      <workItem from="1609959954589" duration="7091000" />
+      <workItem from="1609967472040" duration="2518000" />
+      <workItem from="1610014534669" duration="1523000" />
+      <workItem from="1610023178860" duration="1588000" />
+      <workItem from="1610025527334" duration="259000" />
+      <workItem from="1610283547169" duration="2678000" />
+      <workItem from="1610288938156" duration="1389000" />
+      <workItem from="1610294866646" duration="93000" />
+      <workItem from="1610376296841" duration="6244000" />
+      <workItem from="1610475425722" duration="73000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Data/Midi/Osc Handlers.">
+      <created>1606835386297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606835386297</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed Boid panel to be more General Purpose. Changed to MIDI Panel.">
+      <created>1606837119153</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606837119153</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Flocking Behaviour">
+      <created>1607878302467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607878302467</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated Flocking behaviour.">
+      <created>1607878867691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607878867691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated some Bugs and added methods for sending Rotation and Velocity as midi.">
+      <created>1609961817917</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609961817917</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed bug for Settings Slider loading.&#10;Improved boid algorithm.">
+      <created>1609967105450</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609967105450</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removed arrive Radius from SeekTarget.">
+      <created>1609967619801</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609967619801</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice.">
+      <created>1609968689885</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609968689885</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Removed ArriveDistance slider">
+      <created>1609969221031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609969221031</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adde sendmode Dropdown.&#10;Removed SendMidi toggle.">
+      <created>1609969901581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609969901581</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Removed GetAsMidi functions.">
+      <created>1610014580321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610014580322</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated UI">
+      <created>1610016009529</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610016009529</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added Midi learn button">
+      <created>1610025154354</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610025154354</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Stopped sending midi/osc data if boid options panel is Open.">
+      <created>1610025772276</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610025772276</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added ValuePRinter class">
+      <created>1610283558631</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610283558631</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Value printer class is able to save json value list with MidiValueData as data class.">
+      <created>1610285045849</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610285045849</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added Comments to ValuePrinter and read duration/ read frequenzy to save file.">
+      <created>1610285799929</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610285799929</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added Custom Inspector with Button for StartValueRead() to ValuePrinter.">
+      <created>1610286150200</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610286150200</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed endless recursion loop in durationValueCount property.">
+      <created>1610289410708</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610289410708</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated value printing in order to correctly plot with python script.">
+      <created>1610290933288</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610290933288</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fixed spelling">
+      <created>1610294902470</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610294902470</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Moved ValuePrinter inspector class to Editor folder.">
+      <created>1610376534734</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610376534734</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fixed Options Dropdown bug where wrong index was loaded.">
+      <created>1610378088014</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610378088014</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Commented Boid, BOptions and Midihandler. A little Cleanup.">
+      <created>1610386002721</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386002721</updated>
+    </task>
+    <task id="LOCAL-00025" summary="More Comments.">
+      <created>1610386766213</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386766213</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Optimized Imports.">
+      <created>1610386897765</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610386897765</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added Boid Comment.">
+      <created>1610475496945</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610475496945</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added Flocking Behaviour" />
+    <MESSAGE value="Updated Flocking behaviour." />
+    <MESSAGE value="Updated some Bugs and added methods for sending Rotation and Velocity as midi." />
+    <MESSAGE value="Fixed bug for Settings Slider loading.&#10;Improved boid algorithm." />
+    <MESSAGE value="Removed arrive Radius from SeekTarget." />
+    <MESSAGE value="Combined HandleSendMidi and HandleSendOsc into one.&#10;Now no need to add ValueSend functions twice." />
+    <MESSAGE value="Removed ArriveDistance slider" />
+    <MESSAGE value="Adde sendmode Dropdown.&#10;Removed SendMidi toggle." />
+    <MESSAGE value="Removed GetAsMidi functions." />
+    <MESSAGE value="Updated UI" />
+    <MESSAGE value="Added Midi learn button" />
+    <MESSAGE value="Stopped sending midi/osc data if boid options panel is Open." />
+    <MESSAGE value="Added ValuePRinter class" />
+    <MESSAGE value="Value printer class is able to save json value list with MidiValueData as data class." />
+    <MESSAGE value="Added Comments to ValuePrinter and read duration/ read frequenzy to save file." />
+    <MESSAGE value="Added Custom Inspector with Button for StartValueRead() to ValuePrinter." />
+    <MESSAGE value="Fixed endless recursion loop in durationValueCount property." />
+    <MESSAGE value="updated value printing in order to correctly plot with python script." />
+    <MESSAGE value="fixed spelling" />
+    <MESSAGE value="Moved ValuePrinter inspector class to Editor folder." />
+    <MESSAGE value="Fixed Options Dropdown bug where wrong index was loaded." />
+    <MESSAGE value="Commented Boid, BOptions and Midihandler. A little Cleanup." />
+    <MESSAGE value="More Comments." />
+    <MESSAGE value="Optimized Imports." />
+    <MESSAGE value="Added Boid Comment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Boid Comment." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2054" y="672" key="#Notifications" timestamp="1609961178252">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="2054" y="672" key="#Notifications/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609961178252" />
+    <state width="3029" height="245" key="GridCell.Tab.0.bottom" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="1491" height="247" key="GridCell.Tab.0.bottom/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1609187907518" />
+    <state width="3029" height="245" key="GridCell.Tab.0.bottom/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.0.bottom/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.0.center" timestamp="1609967141385">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="1491" height="247" key="GridCell.Tab.0.center/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1609187907518" />
+    <state width="3029" height="245" key="GridCell.Tab.0.center/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141385" />
+    <state width="2068" height="264" key="GridCell.Tab.0.center/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.0.left" timestamp="1609967141385">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="1491" height="247" key="GridCell.Tab.0.left/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1609187907518" />
+    <state width="3029" height="245" key="GridCell.Tab.0.left/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141385" />
+    <state width="2068" height="264" key="GridCell.Tab.0.left/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998363" />
+    <state width="3029" height="245" key="GridCell.Tab.0.right" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="1491" height="247" key="GridCell.Tab.0.right/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1609187907518" />
+    <state width="3029" height="245" key="GridCell.Tab.0.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.0.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.1.bottom" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.1.bottom/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.1.bottom/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.1.center" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.1.center/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.1.center/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.1.left" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.1.left/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.1.left/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.1.right" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.1.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.1.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.2.bottom" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.2.bottom/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.2.bottom/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.2.center" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.2.center/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.2.center/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.2.left" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.2.left/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.2.left/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.2.right" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.2.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.2.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.3.bottom" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.3.bottom/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.3.bottom/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.3.center" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.3.center/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.3.center/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.3.left" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.3.left/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.3.left/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state width="3029" height="245" key="GridCell.Tab.3.right" timestamp="1609967141386">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state width="3029" height="245" key="GridCell.Tab.3.right/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609967141386" />
+    <state width="2068" height="264" key="GridCell.Tab.3.right/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605467998364" />
+    <state x="1011" y="554" key="LayersDialog" timestamp="1610016086112">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1011" y="554" key="LayersDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610016086112" />
+    <state x="760" y="421" key="SettingsEditor" timestamp="1610294955763">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="760" y="421" key="SettingsEditor/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610294955763" />
+    <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog" timestamp="1610385293311">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="94" y="100" width="1347" height="1494" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610385293311" />
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2" timestamp="1610286155168">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="361" y="580" key="Vcs.Push.Dialog.v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610286155168" />
+    <state x="1354" y="758" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610386862349">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1354" y="758" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610386862349" />
+    <state x="917" y="282" width="3043" height="1674" key="dock-window-1" timestamp="1609509361066">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="917" y="282" width="3043" height="1674" key="dock-window-1/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609509361066" />
+    <state x="1344" y="529" width="637" height="801" key="find.popup" timestamp="1609510055445">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1344" y="529" width="637" height="801" key="find.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1609510055445" />
+    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup" timestamp="1610475435362">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="1242" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1610475435362" />
+    <state x="1241" y="658" width="672" height="678" key="search.everywhere.popup/-1920.-816.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1605466472010" />
+  </component>
+</project>
