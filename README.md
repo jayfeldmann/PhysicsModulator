@@ -1,6 +1,6 @@
 # PhysicsModulator
 
-The PhysicsModulator is a Software developed in combination with the Bachelorthesis by Jan Lukas Feldmann.
+The PhysicsModulator is a Software developed in combination with the Bachelor thesis by Jan Lukas Feldmann.
 The original thesis title is: "Simulation physikalischer Systeme zur Modulation von Effekt- und Synthesizerparametern in der Audioproduktion"
 The english thesis title is: "Simulation of physical System to modulate Effect and Synthesizerparameters for audioproduction"
 
