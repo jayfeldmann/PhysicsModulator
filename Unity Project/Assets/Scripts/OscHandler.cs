@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+ /// <summary>
+ /// Klasse zum Senden von OSC Werten
+ /// </summary>
 public class OscHandler : DataHandler
 {
     public int oscValue = 0;
@@ -15,7 +18,8 @@ public class OscHandler : DataHandler
         if(!_sendController.isActive) return;
         if (Settings.SendMode == SendMode.OSC)
         {
-            
+            // TODO: Methode zum Versenden der Values ins Netzwerk
+            // OSC Ist noch nicht implementiert und außer anzeichen im UI Nicht funktionsfähig.
         }   
     }
 }
