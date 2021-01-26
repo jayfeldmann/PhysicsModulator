@@ -6,16 +6,23 @@ using NAudio.Midi;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Klasse zur Steuerung des Aktiven Midi-Geräts
+/// </summary>
 public class MidiDeviceManager : MonoBehaviour
 {
+    // Instance um auf MidiDeviceManager im gesamten Projekt verweisen zu können
     public static MidiDeviceManager instance;
+    // Index des Ausgewählten Midi Device - Wird zum Senden der MIDI Daten benötigt
     public static int activeMidiDevice = -1;
     
+    // Gerätedropdown für Settings Menü
     [SerializeField] private TMP_Dropdown _midiDeviceDropdown = default;
+    // Dictionary zum Verbinden von Geräte Index und Gerätenamen
     private Dictionary<int, string> _midiDevices;
 
 
-
+    // Initialisierung intance
     private void Awake()
     {
         if (!instance)
@@ -27,6 +34,7 @@ public class MidiDeviceManager : MonoBehaviour
         }
     }
 
+    // Gibt den Namen des aktuell ausgewählten Midi-Gerätes als String zurück
     public string GetActiveMidiDeviceName()
     {
         if (activeMidiDevice>=0)
@@ -36,7 +44,8 @@ public class MidiDeviceManager : MonoBehaviour
 
         return null;
     }
-
+    
+    // Neues Midi-Gerät zuweisen
     public void SetActiveMidiDevice(string name)
     {
         if (_midiDevices.ContainsValue(name))
@@ -51,6 +60,8 @@ public class MidiDeviceManager : MonoBehaviour
         RefreshMidiDevices();
     }
 
+    // Erneuert die Liste der an den Pc angeschlossenen MIDI Geräte
+    // Löscht auch Dropdown und füllt es mit aktualisierter Geräteliste auf
     public void RefreshMidiDevices()
     {
         _midiDeviceDropdown.ClearOptions();
@@ -68,6 +79,7 @@ public class MidiDeviceManager : MonoBehaviour
         SaveManager.OnLoadGameSettings();
     }
 
+    // Legt aktives Midigerät fest
     public void SetActiveMidiDevice(int deviceIndex)
     {
         if (_midiDevices.ContainsKey(deviceIndex))
