@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
+/// <summary>
+/// Klasse um die Boids zu sammeln und Gruppiert zu verwalten
+/// </summary>
 public class BoidArea : MonoBehaviour
 {
     public static BoidArea instance;
