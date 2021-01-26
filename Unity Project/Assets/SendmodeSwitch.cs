@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Klasse zum steuern des Sendemodus durch Dropdown im Header-Menu
+/// </summary>
 public class SendmodeSwitch : MonoBehaviour
 {
     public TMP_Dropdown sendModeDropdown;
