@@ -5,6 +5,9 @@ using System.Diagnostics.SymbolStore;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Hilfsklasse um GameSettings zu speichern.
+/// </summary>
 public class LoadSaveSettings : MonoBehaviour
 {
     public TMP_InputField inPortInputField;
