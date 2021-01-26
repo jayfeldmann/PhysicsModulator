@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Obsolete Klasse, soll ein Bestätigungspanel aufrufen um dsa Speichern der GameSettings zu bestätigen.
+/// </summary>
 public class SaveConfirm : MonoBehaviour
 {
     public LoadSaveSettings loadSaveSettings;
