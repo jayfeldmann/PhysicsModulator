@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b397b1e-5d72-4f9a-85d2-61ec1eae190d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0bbd867b783fd8b62bb48acaf922d616" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a741149473cde338cdc4c830b6cddd9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bb/bb457a2189f52cb551f647b84bf0de62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/20/202f9c3d612039bdc02b9f4e15604073.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/SendmodeSwitch.cs" />
+        <option value="$PROJECT_DIR$/Assets/SimulationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Midi/MidiDeviceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/GameSettingsSaveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Serialization/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoidSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ExtensionMethods.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoadSaveSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OscHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveConfirm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/Midi/MidiHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Boids/Boid.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ncPf3hOsUCRKjvA3v9DkqR50c2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\PhysicsModulator.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\janlu\Documents\Bachelor-Repo\Unity Project\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b397b1e-5d72-4f9a-85d2-61ec1eae190d" name="Default Changelist" comment="" />
+      <created>1611686509463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611686509463</updated>
+      <workItem from="1611686516464" duration="3533000" />
+      <workItem from="1611758632235" duration="1312000" />
+      <workItem from="1611773820462" duration="137000" />
+      <workItem from="1611773992398" duration="6901000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commented SendModeSwitch class">
+      <created>1611686610180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611686610180</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commented SimulationController class">
+      <created>1611686679922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611686679922</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commented MidiDeviceManager class">
+      <created>1611687128120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611687128120</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commented GameSettingsSaveData class">
+      <created>1611687272168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611687272168</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commented SaveManager class">
+      <created>1611689357371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689357371</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commented BoidArea class">
+      <created>1611689433049</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689433049</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commented BoidSpawner class">
+      <created>1611689628335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689628335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commented DataHandler class">
+      <created>1611689704625</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689704625</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commented ExtensionMethods class">
+      <created>1611689912717</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689912717</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commented LoadSaveSettings class">
+      <created>1611689998465</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1611689998465</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commented OscHandler class">
+      <created>1611690110172</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611690110172</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commented SaveConfirm class">
+      <created>1611690182490</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611690182490</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Commented SendModeSwitch class" />
+    <MESSAGE value="Commented SimulationController class" />
+    <MESSAGE value="Commented MidiDeviceManager class" />
+    <MESSAGE value="Commented GameSettingsSaveData class" />
+    <MESSAGE value="Commented SaveManager class" />
+    <MESSAGE value="Commented BoidArea class" />
+    <MESSAGE value="Commented BoidSpawner class" />
+    <MESSAGE value="Commented DataHandler class" />
+    <MESSAGE value="Commented ExtensionMethods class" />
+    <MESSAGE value="Commented LoadSaveSettings class" />
+    <MESSAGE value="Commented OscHandler class" />
+    <MESSAGE value="Commented SaveConfirm class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commented SaveConfirm class" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="2886" height="1502" key="VCS.FileHistoryDialog" timestamp="1611689894786">
+      <screen x="0" y="0" width="3072" height="1688" />
+    </state>
+    <state x="93" y="93" width="2886" height="1502" key="VCS.FileHistoryDialog/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1611689894786" />
+    <state x="-1143" y="153" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611782146235">
+      <screen x="-1920" y="-281" width="1920" height="1030" />
+    </state>
+    <state x="-1143" y="153" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1611782146235" />
+    <state x="-1293" y="-162" width="666" height="801" key="find.popup" timestamp="1611782159617">
+      <screen x="-1920" y="-281" width="1920" height="1030" />
+    </state>
+    <state x="-1293" y="-162" width="666" height="801" key="find.popup/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1611782159617" />
+    <state x="-1171" y="-45" width="672" height="414" key="search.everywhere.popup" timestamp="1611783108186">
+      <screen x="-1920" y="-281" width="1920" height="1030" />
+    </state>
+    <state x="-1171" y="-45" width="672" height="414" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@-1920.-281.1920.1030" timestamp="1611783108186" />
+    <state x="1198" y="387" width="672" height="678" key="search.everywhere.popup/-1920.-281.1920.1030/0.0.3072.1688@0.0.3072.1688" timestamp="1611759696151" />
+  </component>
+</project>
