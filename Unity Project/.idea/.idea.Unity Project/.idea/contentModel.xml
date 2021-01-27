@@ -11,37 +11,44 @@
           <e p="ValuePrinterEditor.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Boid.cs" t="Include" />
-          <e p="BoidArea.cs" t="Include" />
-          <e p="BoidAreaTest.cs" t="Include" />
-          <e p="BoidOptions.cs" t="Include" />
-          <e p="BoidPreset.cs" t="Include" />
-          <e p="BoidSettings.cs" t="Include" />
-          <e p="BoidSpawner.cs" t="Include" />
-          <e p="DataHandler.cs" t="Include" />
-          <e p="ExtensionMethods.cs" t="Include" />
-          <e p="LoadSaveSettings.cs" t="Include" />
-          <e p="Midi" t="Include">
-            <e p="MidiDeviceManager.cs" t="Include" />
+          <e p="Boids" t="Include">
+            <e p="Boid.cs" t="Include" />
+            <e p="BoidArea.cs" t="Include" />
+            <e p="BoidAreaTest.cs" t="Include" />
+            <e p="BoidOptions.cs" t="Include" />
+            <e p="BoidPreset.cs" t="Include" />
+            <e p="BoidSettings.cs" t="Include" />
+            <e p="BoidSpawner.cs" t="Include" />
           </e>
-          <e p="MidiHandler.cs" t="Include" />
-          <e p="OSC" t="Include">
-            <e p="OSC.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="DataHandler.cs" t="Include" />
+            <e p="Midi" t="Include">
+              <e p="MidiDeviceManager.cs" t="Include" />
+              <e p="MidiHandler.cs" t="Include" />
+            </e>
+            <e p="OSC" t="Include">
+              <e p="OSC.cs" t="Include" />
+              <e p="OscHandler.cs" t="Include" />
+            </e>
+            <e p="SendController.cs" t="Include" />
+            <e p="ValuePrinter.cs" t="Include" />
           </e>
-          <e p="OscHandler.cs" t="Include" />
-          <e p="SaveConfirm.cs" t="Include" />
-          <e p="SendController.cs" t="Include" />
-          <e p="SendmodeSwitch.cs" t="Include" />
+          <e p="Helper" t="Include">
+            <e p="ExtensionMethods.cs" t="Include" />
+          </e>
           <e p="Serialization" t="Include">
             <e p="BoidPresetSaveData.cs" t="Include" />
             <e p="GameSettingsSaveData.cs" t="Include" />
+            <e p="LoadSaveSettings.cs" t="Include" />
+            <e p="SaveConfirm.cs" t="Include" />
             <e p="SaveManager.cs" t="Include" />
           </e>
-          <e p="Settings.cs" t="Include" />
-          <e p="SimulationController.cs" t="Include" />
-          <e p="SliderMidiTest.cs" t="Include" />
-          <e p="UIManager.cs" t="Include" />
-          <e p="ValuePrinter.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="SendmodeSwitch.cs" t="Include" />
+            <e p="Settings.cs" t="Include" />
+            <e p="SimulationController.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
