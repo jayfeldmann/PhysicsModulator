@@ -19,5 +19,4 @@ On windows you will need a MIDI-Bus or similar. The one I tested with was loopMi
 in your DAW or similar.
 
 Mac:
-Mac is similar to Windows, but you dont need additional tools, because Mac OS already comes with a Midi Bus pre-installed. Just activate it in the Mac-Midi settings and use it as a device in both
-PhysicsModulator and your DAW or similar.
+Mac is dueto library problems not supported in the current build.
